@@ -4,12 +4,12 @@
     <title>MeetUp - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
     <link rel="stylesheet" href="src/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="src/css/animate.css">
-    
+
     <link rel="stylesheet" href="src/css/owl.carousel.min.css">
     <link rel="stylesheet" href="src/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="src/css/magnific-popup.css">
@@ -17,14 +17,14 @@
     <link rel="stylesheet" href="src/css/aos.css">
 
     <link rel="stylesheet" href="src/css/ionicons.min.css">
-    
+
     <link rel="stylesheet" href="src/css/flaticon.css">
     <link rel="stylesheet" href="src/css/icomoon.css">
     <link rel="stylesheet" href="src/css/style.css">
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
+
+
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">Meet<span>Up.</span></a>
@@ -41,7 +41,7 @@
 	          <li class="nav-item"><a href="#pricing-section" class="nav-link"><span>Pricing</span></a></li>
 	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	          <li class="nav-item cta"><a href="#" class="nav-link">Buy Ticket</a></li>
+	          <li class="nav-item cta"><a href="views/mosaique.php" class="nav-link">Buy Ticket</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -147,7 +147,7 @@
     		</div>
     	</div>
     </section>
-		
+
 		<section class="ftco-section ftco-subscribe img" style="background-image: url(src/images/bg_1.jpg);">
 			<div class="overlay"></div>
 			<div class="container">
@@ -336,7 +336,7 @@
 				</div>
 			</div>
 		</section>
- 
+
 		<section class="ftco-section bg-light" id="schedule-section">
 			<div class="container">
 				<div class="row justify-content-center pb-5">
@@ -361,7 +361,7 @@
 	            </div>
 	          </div>
 	          <div class="col-md-8 tab-wrap">
-	            
+
 	            <div class="tab-content" id="v-pills-tabContent">
 
 	              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
@@ -493,7 +493,7 @@
 				<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
           	<span class="subheading">Pricing</span>
-            <h2 class="mb-4">Buy Tickets</h2>
+
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
           </div>
         </div>
@@ -660,7 +660,7 @@
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
               </div>
             </form>
-          
+
           </div>
 
           <div class="col-md-5 d-flex">
@@ -714,7 +714,7 @@
         </div>
       </div>
     </section>
-		
+
 		<section class="ftco-section ftco-no-pt ftco-no-pb">
 			<div id="map" class="bg-white"></div>
 		</section>
@@ -779,8 +779,8 @@
         </div>
       </div>
     </footer>
-    
-  
+
+
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
@@ -800,8 +800,8 @@
   <script src="src/js/scrollax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="src/js/google-map.js"></script>
-  
+
   <script src="src/js/main.js"></script>
-    
+
   </body>
 </html>
