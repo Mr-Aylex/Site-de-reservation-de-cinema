@@ -11,6 +11,7 @@ class Utilisateur
     protected $admin;
 
     /**
+     * Utilisateur constructor.
      * @param array $array
      */
     public function __construc($array)
@@ -19,13 +20,20 @@ class Utilisateur
         {
             $array['admin']=null;
         }
-        $this->setNom($array['nom'])
-            ->setPrenom($array['prenom'])
-            ->setMail($array['mail'])
-            ->setAdresse($array['adresse'])
-            ->setMdp($array['mdp'])
-            ->setAdmin($array['admin'])
-        ;
+        $this->hydrate($array);
+    }
+
+    /**
+     * @param array $donnees
+     */
+    public function hydrate($donnees)
+    {
+        foreach($donnees as $key => $value){
+            $method = 'set'.ucfirst($key);
+            if(method_exists($this,$method)){
+                $method($value);
+            }
+        }
     }
     /**
      * @return string

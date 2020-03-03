@@ -3,11 +3,20 @@
 require_once("../manager/manager.php");
 
 class Films {
-  public $film,$salle;
-  public function __construct(){
+  protected $titre;
+  protected $salle;
+
+  /**
+   * Films constructor.
+   * @param $donnees
+   */
+  public function __construct($donnees){
     $this->hydrate($donnees);
   }
 
+  /**
+   * @param array $donnees
+   */
   public function hydrate($donnees){
     foreach($donnees as $key => $value){
           $method = 'set'.ucfirst($key);
@@ -17,19 +26,37 @@ class Films {
     }
 
   }
-  public function setFilm(){
-    if(!is_string($film)){
-      header("Location:../views/mosaique.php");
-    }
-    return $this->_film = $film;
+
+  /**
+   * @return mixed
+   */
+  public function getSalle()
+  {
+    return $this->salle;
   }
-  public function setSalle(){
-    if(!is_string($salle)){
-      header("Location:../views/mosaique.php");
-    }
-    return $this->_salle = $salle;
+
+  /**
+   * @param mixed $salle
+   */
+  public function setSalle($salle)
+  {
+    $this->salle = $salle;
   }
-  public function getSalle(){return $this->_salle;}
-  public function getFilm(){return $this->_film;}
+
+  /**
+   * @return string
+   */
+  public function getTitre()
+  {
+    return $this->titre;
+  }
+
+  /**
+   * @param string $titre
+   */
+  public function setTitre($titre)
+  {
+    $this->titre = $titre;
+  }
 }
 ?>
