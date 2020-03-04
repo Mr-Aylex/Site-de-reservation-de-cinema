@@ -5,6 +5,9 @@ reuiqre_once("../model/Films.php");
 
 class manager
 {
+    /**
+     * @return PDO
+     */
     public function connexion_bd()
     {
         try
@@ -17,6 +20,10 @@ class manager
         }
         return $bdd;
     }
+
+    /**
+     * @param Films $films
+     */
     public function insert_film(Films $films)
     {
 
@@ -29,7 +36,11 @@ class manager
 
 
     }
-        public function insert_Utilisateur(Utilisateur $user)
+
+    /**
+     * @param Utilisateur $user
+     */
+    public function insert_Utilisateur(Utilisateur $user)
     {
         $request = $this->connexion_bd()->prepare('INSERT INTO utilisateur(nom, prenom, mail, adresse, mdp, admin) VALUES(:nom, :prenom, :mail, :adresse, :mdp, :admin)');
         $insert_utilisateur = $request->execute(array(

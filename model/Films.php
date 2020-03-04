@@ -37,10 +37,12 @@ class Films {
 
   /**
    * @param mixed $salle
+   * @return Films
    */
   public function setSalle($salle)
   {
     $this->salle = $salle;
+    return $this;
   }
 
   /**
@@ -53,10 +55,12 @@ class Films {
 
   /**
    * @param string $titre
+   * @return Films
    */
   public function setTitre($titre)
   {
     $this->titre = $titre;
+    return $this;
   }
 }
 ?>
