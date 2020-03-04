@@ -54,6 +54,10 @@ class manager
             'mdp' => $user->getMdp(),
             'admin' => $user->getAdmin()
         ));
+        if ($insert_utilisateur == true)
+        {
+            header("Location: ../index.php");
+        }
     }
 
 }
