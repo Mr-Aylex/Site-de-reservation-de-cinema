@@ -1,7 +1,7 @@
 <?php
 
 require_once("../traitement/traitement_film.php");
-reuiqre_once("../model/Films.php");
+require_once("../model/Films.php");
 
 class manager
 {
@@ -28,7 +28,10 @@ class manager
     {
 
     $request = $this->connexion_bd()->prepare('INSERT INTO films(nom,salle) VALUES(:nom, :salle)');
-    $insert_film =$request->execute(array('nom'=>$films->getFilm(),$films,'salle'=>$films->getSalle()));
+    $insert_film =$request->execute(array(
+        'nom'=>$films->getTitre(),
+        'salle'=>$films->getSalle()
+        ));
     if($insert_film == true)
     {
         header("Location: ../index.php");

@@ -3,6 +3,7 @@
 require_once("../manager/manager.php");
 
 class Films {
+
   protected $titre;
   protected $salle;
 
@@ -20,15 +21,16 @@ class Films {
   public function hydrate($donnees){
     foreach($donnees as $key => $value){
           $method = 'set'.ucfirst($key);
+          echo $method." ";
           if(method_exists($this,$method)){
-            $method($value);
+            $this->$method($value);
           }
     }
 
   }
 
   /**
-   * @return mixed
+   * @return string
    */
   public function getSalle()
   {
@@ -36,7 +38,7 @@ class Films {
   }
 
   /**
-   * @param mixed $salle
+   * @param string $salle
    * @return Films
    */
   public function setSalle($salle)
