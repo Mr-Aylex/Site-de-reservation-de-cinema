@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+session_start();
 include "include/header.php";
 ?>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -23,6 +24,7 @@ include "include/header.php";
 	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	          <li class="nav-item cta"><a href="views/mosaique.php" class="nav-link">Buy Ticket</a></li>
+                <li class="nav-item cta"><a href="formulaire/inscription_form.php" class="nav-link">Connexion</a></li>
 	        </ul>
 	      </div>
 	    </div>

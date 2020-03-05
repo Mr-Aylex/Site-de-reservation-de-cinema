@@ -3,6 +3,9 @@
 require_once("../traitement/traitement_film.php");
 require_once("../model/Films.php");
 
+/**
+ * Class manager
+ */
 class manager
 {
     /**
@@ -34,7 +37,7 @@ class manager
         ));
     if($insert_film == true)
     {
-        header("Location: ../index.php");
+        //header("Location: ../index.php");
     }
 
 
@@ -57,6 +60,27 @@ class manager
         if ($insert_utilisateur == true)
         {
             header("Location: ../index.php");
+        }
+    }
+
+    /**
+     * @param $mail
+     * @param $mdp
+     * @return Utilisateur
+     */
+    public function select_utilisateur($mail, $mdp)
+    {
+        $request = $this->connexion_bd()->prepare('SELECT * FROM utilisateur WHERE mail=:mail and mdp=:mdp');
+        $response = $request->execute(array('mdp'=>$mdp, 'mail'=>$mail));
+        $connexion = $response->fetch();
+        if ($connexion == true)
+        {
+            $user = new Utilisateur($connexion);
+            return $user;
+        }
+        else
+        {
+            header('Location: connexion_form.php');
         }
     }
 

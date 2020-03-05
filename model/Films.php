@@ -2,6 +2,9 @@
 
 require_once("../manager/manager.php");
 
+/**
+ * Class Films
+ */
 class Films {
 
   protected $titre;
@@ -21,7 +24,6 @@ class Films {
   public function hydrate($donnees){
     foreach($donnees as $key => $value){
           $method = 'set'.ucfirst($key);
-          echo $method." ";
           if(method_exists($this,$method)){
             $this->$method($value);
           }

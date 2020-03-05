@@ -1,10 +1,11 @@
 <?php
 /**
- *Inscription utilisateur
+ * Connexion utilisateur
  */
+session_start();
 require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/manager/manager.php");
 require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Utilisateur.php");
-$ut = new Utilisateur($_POST);
 $manager = new manager();
-$manager->insert_Utilisateur($ut);
+$user = $manager->select_utilisateur($_POST['mail'], $_POST['mdp']);
+$_SESSION['user'] = serialize($user);
 ?>

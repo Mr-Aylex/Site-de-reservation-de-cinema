@@ -1,8 +1,11 @@
 <?php
 
-
+/**
+ * Class Utilisateur
+ */
 class Utilisateur
 {
+    protected $id;
     protected $nom;
     protected $prenom;
     protected $mail;
@@ -14,8 +17,9 @@ class Utilisateur
      * Utilisateur constructor.
      * @param array $array
      */
-    public function __construc($array)
+    public function __construct($array)
     {
+
         if(empty($array['admin']))
         {
             $array['admin']=null;
@@ -141,6 +145,22 @@ class Utilisateur
     {
         $this->admin = $admin;
         return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
     }
 
 
