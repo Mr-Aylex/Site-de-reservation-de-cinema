@@ -9,28 +9,26 @@ include "include/header.php";
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Meet<span>Up.</span></a>
+	      <a class="navbar-brand" href="index.html">Ciné<span> Views.</span></a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#speakers-section" class="nav-link"><span>Speakers</span></a></li>
-	          <li class="nav-item"><a href="#schedule-section" class="nav-link"><span>Schedule</span></a></li>
-	          <li class="nav-item"><a href="#pricing-section" class="nav-link"><span>Pricing</span></a></li>
-	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Cinéma</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>Films</span></a></li>
+	          <li class="nav-item"><a href="#speakers-section" class="nav-link"><span>News</span></a></li>
+	          <li class="nav-item"><a href="#schedule-section" class="nav-link"><span>Evènement</span></a></li>
+	          <li class="nav-item"><a href="#pricing-section" class="nav-link"><span>Carte Premium</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	          <li class="nav-item cta"><a href="views/mosaique.php" class="nav-link">Buy Ticket</a></li>
                 <li class="nav-item cta"><a href="formulaire/inscription_form.php" class="nav-link">Connexion</a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
 	  <section id="home-section" class="hero js-fullheight">
-	  	<h3 class="vr"><span>Welcome</span> to MeetUp.</h3>
+	  	<h3 class="vr"><span>Bienvenue </span> à Cine Views.</h3>
 	  	<div id="timer" class="text-center">
 			  <div class="time" id="days"></div>
 			  <div class="time" id="hours"></div>
@@ -42,14 +40,13 @@ include "include/header.php";
 	      	<div class="overlay"></div>
 	        <div class="container-fluid px-0">
 	          <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/bg_1.jpg);">
+	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/carroussel.jpeg);">
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text mt-4 mt-md-0">
-			            <h1 class="mb-4">Annual <span>Conference</span> 2019</span></h1>
-			            <h2 class="mb-4">November 26-30, 2019 - 08:00am-12:00pm</h2>
-			            <p><a href="#" class="btn btn-primary py-3 px-4">Get Ticket</a> <a href="#" class="btn btn-white py-3 px-4">Watch Video</a></p>
+			            <h2 class="mb-4">Réservez dès maintenant </h2>
+			            <p></li><a href="views/mosaique.php" class="btn btn-primary py-3 px-4">Acheter un ticket</a> <a href="#" class="btn btn-white py-3 px-4">Bande annonce</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -60,19 +57,35 @@ include "include/header.php";
 	      	<div class="overlay"></div>
 	        <div class="container-fluid px-0">
 	          <div class="row d-flex no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/bg_2.jpg);">
+	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/carroussel_2.jpeg);">
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text mt-4 mt-md-0">
-			            <h1 class="mb-4">Business <span>Conference</span> 2019</h1>
-			            <h2 class="mb-4">November 26-30, 2019 - 08:00am-12:00pm</h2>
-			            <p><a href="#" class="btn btn-primary py-3 px-4">Get Ticket</a> <a href="#" class="btn btn-white py-3 px-4">Watch Video</a></p>
-		            </div>
+                  <h2 class="mb-4">Réservez dès maintenant </h2>
+                <p><a href="#" class="btn btn-primary py-3 px-4">Acheter un ticket</a> <a href="#" class="btn btn-white py-3 px-4">Bande annonce</a></p>
+              </div>
 		          </div>
 	        	</div>
 	        </div>
 	      </div>
+
+        <div class="slider-item js-fullheight">
+          <div class="overlay"></div>
+          <div class="container-fluid px-0">
+            <div class="row d-flex no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
+              <div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/carroussel_3.jpeg);">
+                <div class="overlay"></div>
+              </div>
+              <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                <div class="text mt-4 mt-md-0">
+                    <h2 class="mb-4">Réservez dès maintenant </h2>
+                  <p><a href="#" class="btn btn-primary py-3 px-4">Acheter un ticket</a> <a href="#" class="btn btn-white py-3 px-4">Bande annonce</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 	    </div>
     </section>
 
