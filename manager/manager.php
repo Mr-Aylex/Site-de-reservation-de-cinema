@@ -9,8 +9,8 @@ require_once("../model/Films.php");
 class manager
 {
     /**
-     * @return PDO
-     */
+* @return PDO
+*/
     public function connexion_bd()
     {
         try
@@ -48,18 +48,36 @@ class manager
      */
     public function insert_Utilisateur(Utilisateur $user)
     {
-        $request = $this->connexion_bd()->prepare('INSERT INTO utilisateur(nom, prenom, mail, adresse, mdp, admin) VALUES(:nom, :prenom, :mail, :adresse, :mdp, :admin)');
-        $insert_utilisateur = $request->execute(array(
+        $db = $this->connexion_bd();
+        $req = $db->prepare('SELECT nom, prenom FROM utilisateur WHERE nom=:nom, prenom=:prenom');
+        $req->execute(array(// on lit les donnée de la base de donnée
             'nom' => $user->getNom(),
-            'prenom' => $user->getPrenom(),
-            'mail' => $user->getMail(),
-            'adresse' => $user->getAdresse(),
-            'mdp' => $user->getMdp(),
-            'admin' => $user->getAdmin()
-        ));
-        if ($insert_utilisateur == true)
-        {
-            header("Location: ../index.php");
+            'prenom' => $user->getPrenom()));
+        $donne = $req->fetch();
+        if ($donne == true) {
+            header(dirname($_SERVER['DOCUMENT_ROOT'])  . '/site-de-reservation-de-cinema/formulaire/inscription_form.php');
+        } else {
+            $req = $db->prepare('SELECT mail FROM utilisateur WHERE mail=:mail');
+            $req->execute(array(// on lit les donnée de la base de donnée
+                'mail' => $user->getMail()));
+            $donne = $req->fetch();
+            if ($donne == true) {
+                header(dirname($_SERVER['DOCUMENT_ROOT']). '/site-de-reservation-de-cinema/formulaire/inscription_form.php');
+            } else {
+                $request = $db->prepare('INSERT INTO utilisateur(nom, prenom, mail, adresse, mdp, admin) VALUES(:nom, :prenom, :mail, :adresse, :mdp, :admin)');
+                $insert_utilisateur = $request->execute(array(
+                    'nom' => $user->getNom(),
+                    'prenom' => $user->getPrenom(),
+                    'mail' => $user->getMail(),
+                    'adresse' => $user->getAdresse(),
+                    'mdp' => $user->getMdp(),
+                    'admin' => $user->getAdmin()
+                ));
+                if ($insert_utilisateur == true) {
+                    header("Location: ../index.php");
+                }
+            }
+
         }
     }
 
