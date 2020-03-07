@@ -1,0 +1,33 @@
+.form{
+  margin: 230px auto;
+  margin-top:150px;
+    width:400px;
+    padding:10px;
+    height:500px;
+    padding:10px 20px;
+     opacity : 0.9;
+    background-color:#f9cf22;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+
+.body{
+    background-image:url(../images/formulaire/formulaire_film.jpeg);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+h1{
+  text-align:center;
+}
+input[type="text"],input[type="password"]{
+  width:300px;background:none;border-left:none;border-right:none;border-bottom:1px solid white;border-top:none;cursor:text;display:block;margin-left:0px;
+}
+
+input[type="submit"]{
+  color:#000000;
+  margin-top:10px;display:block;margin-left:0px;
+}

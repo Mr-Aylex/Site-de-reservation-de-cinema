@@ -1,0 +1,44 @@
+.img{
+  margin-left: 70px;margin-top:10px;
+  border-radius: 5px;
+}
+.titre_film{
+  font-size:16px;
+  text-align: center;
+  color:#fff;
+}
+table{
+  margin-top:200px;
+}
+
+.division{
+  position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+.icon{
+  margin-left: 155px;
+  margin-top: -25px;
+  font-size: 15px;
+  color:white;
+  background-color: #f9cf22;
+  height:20px;
+  width:60px;
+  border-radius: 4px;
+  text-align: center;
+
+}
+
+body{
+  background-color: #011523
+}
