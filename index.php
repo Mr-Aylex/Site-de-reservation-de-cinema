@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-session_start();
 include "include/header.php";
 ?>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">

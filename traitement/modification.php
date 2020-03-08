@@ -1,12 +1,12 @@
 <?php
 /**
- * Connexion utilisateur
+ * Modification d'un profile utilisateur
  */
-session_start();
 require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/manager/manager.php");
 require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Utilisateur.php");
+session_start();
+$user = unserialize($_SESSION['user']);
+$user->hydrate($_POST);
 $manager = new manager();
-$user = $manager->connexion_utilisateur($_POST['mail'], $_POST['mdp']);
-$_SESSION['user'] = serialize($user);
-header('Location: ../index.php');
+$manager->modifier_les_donnees_utilisateur($user);
 ?>

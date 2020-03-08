@@ -2,7 +2,15 @@
     <title>MeetUp - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <?php
+    require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/manager/manager.php");
+    require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Utilisateur.php");
+    session_start();
+    if (isset($_SESSION['user']))
+    {
+        $user = unserialize($_SESSION['user']);
+    }
+    ?>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
     <link rel="stylesheet" href="/Site-de-reservation-de-cinema/src/css/open-iconic-bootstrap.min.css">
@@ -37,7 +45,10 @@
 	          <li class="nav-item"><a href="#schedule-section" class="nav-link"><span>Evènement</span></a></li>
 	          <li class="nav-item"><a href="#pricing-section" class="nav-link"><span>Carte Premium</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-                <li class="nav-item cta"><a href="../formulaire/inscription_form.php" class="nav-link">Connexion</a></li>
+                <li class="nav-item cta"><a href="formulaire/connexion_form.php" class="nav-link">Connexion</a></li>
+                <li class="nav-item cta"><a href="formulaire/inscription_form.php" class="nav-link">Insciption</a></li>
+                <li class="nav-item cta"><a href="formulaire/modification_form.php" class="nav-link">modification</a></li>
+                <li class="nav-item cta"><a href="traitement/deconnexion.php" class="nav-link">Déconnexion</a></li>
 	        </ul>
 	      </div>
 	    </div>

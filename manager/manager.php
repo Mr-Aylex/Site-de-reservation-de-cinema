@@ -1,7 +1,7 @@
 <?php
 
-require_once("../traitement/traitement_film.php");
-require_once("../model/Films.php");
+//require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/traitement/traitement_film.php");
+//require_once("../model/Films.php");
 
 /**
  * Class manager
@@ -86,20 +86,57 @@ class manager
      * @param $mdp
      * @return Utilisateur
      */
-    public function select_utilisateur($mail, $mdp)
+    public function connexion_utilisateur($mail, $mdp)
     {
         $request = $this->connexion_bd()->prepare('SELECT * FROM utilisateur WHERE mail=:mail and mdp=:mdp');
-        $response = $request->execute(array('mdp'=>$mdp, 'mail'=>$mail));
-        $connexion = $response->fetch();
-        if ($connexion == true)
+        $request->execute(array('mdp'=>$mdp, 'mail'=>$mail));
+        $response = $request->fetch();
+        if ($response == true)
         {
-            $user = new Utilisateur($connexion);
+            $user = new Utilisateur($response);
             return $user;
         }
         else
         {
             header('Location: connexion_form.php');
         }
+    }
+
+    /**
+     * @param int $id
+     * @return Utilisateur
+     */
+    public function recuperer_les_donnees_admin($id)
+    {
+        $request = $this->connexion_bd()->prepare('SELECT * FROM utilisateur WHERE id = :id');
+        $request->execute(array('id' => $id));
+        $response = $request->fetch();
+        if ($response == true)
+        {
+            $user = new Utilisateur($response);
+            return $user;
+        }
+        else
+        {
+            header('Location: connexion_form.php');
+        }
+    }
+
+    /**
+     * @param Utilisateur $user
+     */
+    public function modifier_les_donnees_utilisateur(Utilisateur $user)
+    {
+        $request = $this->connexion_bd()->prepare(' UPDATE utilisateur SET nom = :nom, prenom = :prenom, mail = :mail, adresse = :adresse WHERE id = :id');
+        $request->execute(array(
+            'nom' => $user->getNom(),
+            'prenom' => $user->getPrenom(),
+            'mail' => $user->getAdresse(),
+            'adresse' => $user->getAdresse(),
+            'id' => $user->getId()
+        ));
+
+            header('Location: ../index.php');
     }
 
 }
