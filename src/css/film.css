@@ -1,0 +1,88 @@
+.body{
+    background-color: #011523
+}
+
+.film{
+  width:800px;
+  height: 500px;
+background-color: #3a4e6757;
+border-radius: 24px;
+margin-bottom: 30px;
+margin-top:100px;
+margin-left:100px;
+}
+
+.img_la_foret{
+  margin-top:50px;
+  margin-left: 50px;
+}
+
+.bouton{
+  margin-top:-75px;
+  margin-left:150px;
+}
+.bande_annonce{
+  border-radius:5px;
+  margin-top:300px;
+  margin-left:110px;
+
+}
+.laforet{
+  border-radius:5px;
+  height:300px;
+}
+.title{
+  margin-left:320px;
+  margin-top:200px;
+  color:#fff;
+}
+
+.resume{
+  margin-left:320px;
+  width:400px;
+}
+
+.etoile{
+  margin-left:320px;
+
+}
+
+.stars{
+  color:#f9cf22;
+}
+.commentaire{
+  width:500px;
+  margin-left:100px;
+  margin-bottom:40px;
+
+}
+
+.form{
+  width:500px;
+}
+
+input[type="submit"]{
+  margin-left:290px;
+  background-color:#f9cf22;
+  color:#fff;
+}
+label{
+  color:#f9cf22;
+}
+
+.vedette{
+  margin-top:-480px;
+  margin-left:920px;
+}
+.bord{
+  margin-left:920px;
+  border-radius:5px;
+}
+
+.td{
+  border-radius:10px;
+}
+
+.aligner{
+  margin-top:-500px;
+}
