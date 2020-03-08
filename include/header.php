@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="/Site-de-reservation-de-cinema/src/css/icomoon.css">
     <link rel="stylesheet" href="/Site-de-reservation-de-cinema/src/css/style.css">
     <link rel="stylesheet" type="text/css" href="../src/css/mosaique.css" />
-
-
+	<script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">Ciné<span> Views.</span></a>
