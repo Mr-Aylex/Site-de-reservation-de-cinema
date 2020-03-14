@@ -108,6 +108,7 @@ class manager
      */
     public function recuperer_les_donnees_admin($id)
     {
+        /** @var PDO $this */
         $request = $this->connexion_bd()->prepare('SELECT * FROM utilisateur WHERE id = :id');
         $request->execute(array('id' => $id));
         $response = $request->fetch();
