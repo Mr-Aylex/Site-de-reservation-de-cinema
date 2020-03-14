@@ -31,23 +31,27 @@
 	<script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Ciné<span> Views.</span></a>
+	      <a class="navbar-brand" href="/Site-de-reservation-de-cinema/index.php">Ciné<span> Views.</span></a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Cinéma</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>Films</span></a></li>
-	          <li class="nav-item"><a href="#speakers-section" class="nav-link"><span>News</span></a></li>
-	          <li class="nav-item"><a href="#schedule-section" class="nav-link"><span>Evènement</span></a></li>
-	          <li class="nav-item"><a href="#pricing-section" class="nav-link"><span>Carte Premium</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-                <li class="nav-item cta"><a href="formulaire/connexion_form.php" class="nav-link">Connexion</a></li>
-                <li class="nav-item cta"><a href="formulaire/inscription_form.php" class="nav-link">Insciption</a></li>
+	        <ul class="navbar-nav nav">
+	          <li class="nav-item"><a href="/Site-de-reservation-de-cinema/index.php" class="nav-link"><span>Cinéma</span></a></li>
+	          <li class="nav-item"><a href="/Site-de-reservation-de-cinema/views/mosaique.php" class="nav-link"><span>Films</span></a></li>
+	          <li class="nav-item"><a href="#schedule-section" class="nav-link"><span>À venir</span></a></li>
+	          <!--<li class="nav-item"><a href="/Site-de-reservation-de-cinema/views/premium.php" class="nav-link"><span>Carte Premium</span></a></li>-->
+	          <li class="nav-item"><a href="/Site-de-reservation-de-cinema/views/contact.php" class="nav-link"><span>Contact</span></a></li>
+                <?php
+                if(empty($_SESSION['user'])) {?>
+                    <li class="nav-item cta"><a href="formulaire/connexion_form.php" class="nav-link">Connexion</a></li>
+                    <li class="nav-item cta"><a href="formulaire/inscription_form.php" class="nav-link">Insciption</a></li>
+                <?php } else {?>
+
                 <li class="nav-item cta"><a href="formulaire/modification_form.php" class="nav-link">modification</a></li>
                 <li class="nav-item cta"><a href="traitement/deconnexion.php" class="nav-link">Déconnexion</a></li>
+                <?php } ?>
 	        </ul>
 	      </div>
 	    </div>
