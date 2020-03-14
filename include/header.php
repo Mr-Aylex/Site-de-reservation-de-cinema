@@ -46,7 +46,7 @@
                 <?php
                 if(empty($_SESSION['user'])) {?>
                     <li class="nav-item cta"><a href="formulaire/connexion_form.php" class="nav-link">Connexion</a></li>
-                    <li class="nav-item cta"><a href="formulaire/inscription_form.php" class="nav-link">Insciption</a></li>
+                    <li class="nav-item cta"><a href="formulaire/inscription_form.php" class="nav-link">Inscription</a></li>
                 <?php } else {?>
 
                 <li class="nav-item cta"><a href="formulaire/modification_form.php" class="nav-link">modification</a></li>
