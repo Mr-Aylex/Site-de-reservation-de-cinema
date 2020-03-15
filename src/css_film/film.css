@@ -1,5 +1,5 @@
 .body{
-    background-color: #011523
+    background-color: #011523;
 }
 
 .film{
@@ -16,14 +16,18 @@ margin-left:100px;
   margin-top:50px;
   margin-left: 50px;
 }
+.laforet{
+  margin-top: -400px;
 
+}
 .bouton{
   margin-top:-75px;
   margin-left:150px;
 }
 .bande_annonce{
-  border-radius:5px;
-  margin-left:110px;
+  margin-top:400px;
+  border-radius:5px ;
+  margin-left:110px ;
 
 }
 .laforet{
@@ -31,19 +35,32 @@ margin-left:100px;
   height:300px;
 }
 .title{
-  margin-left:320px;
-  margin-top:10px;
+  margin-top:-370px;
+margin-left:320px;
   color:#fff;
+
+}
+.trait{
+  width:200px;
+margin-left:320px;
+margin-top:2px;
+border-bottom: 1px solid #0a2f5a;
+}
+
+.tweet{
+  margin-top: -610px;
+  margin-left:900px;
 }
 
 .resume{
   margin-left:320px;
   width:400px;
+  margin-top:10px;
 }
 
 .etoile{
   margin-left:320px;
-
+margin-top: -200px;
 }
 
 .stars{
@@ -69,6 +86,7 @@ label{
   color:#f9cf22;
 }
 
+
 .vedette{
   margin-top:-480px;
   margin-left:920px;
@@ -77,11 +95,19 @@ label{
   margin-left:920px;
   border-radius:5px;
 }
+.bord_3{
+  margin-left:920px;
+  border-radius:5px;
+}
+
+
+.bord_2{
+
+  margin-top:-250px;
+  margin-left:1100px;
+  border-radius:5px;
+}
 
 .td{
   border-radius:10px;
-}
-
-.aligner{
-  margin-top:-500px;
 }

@@ -6,7 +6,8 @@
     <title></title>
 
 
-<link rel="stylesheet" type="text/css" href="../../src/css/film.css" />
+<link rel="stylesheet" type="text/css" href="../../src/css_film/film.css" />
+<script type="text/javascript" src="../../src/javascript/film.js"></script>
   </head>
   <body class="body">
 <?php include "../../include/header.php" ?>
@@ -20,7 +21,7 @@
 
 
 <div class="bouton">
-    <button href="../formulaire/formulaire_film.php" class="btn btn-primary">Ajouter à la watch_list</button>
+    <button id="watch" href="../formulaire/formulaire_film.php" class="btn btn-primary">Ajouter à la watch_list</button>
     <button href="../formulaire/formulaire_film.php" class="btn btn-primary ">Bande annonce </button>
         <button href="../formulaire/formulaire_film.php" class="btn btn-primary partager_film">Partager ce film</button>
 
@@ -31,7 +32,9 @@
 </div>
 
   <img class="bord" width="175" height="220" src="../../src/images/image_film/bande_annonce_laforet.jpg"></img>
-    <img class="bord" width="175" height="220"  src="../../src/images/image_film/bande_annonce_sonic.jpg"></img>
+    <img class="bord_2" width="175" height="220"  src="../../src/images/image_film/bande_annonce_sonic.jpg"></img>
+    <img class="bord_3" width="175" height="220" src="../../src/images/image_film/bande_annonce_harleyquinn.jpg"></img>
+      <img class="bord_4" width="175" height="220"  src="../../src/images/image_film/bande_annonce_theboy.jpg"></img>
 
 
 <div class="bande_annonce" >
@@ -39,18 +42,21 @@
 </div>
 
 
-<div class="aligner">
-
 <h4 class="title">L'appel de la forêt</h4>
+
+
 <div class="resume">Lorsque vous regardez l'appel, il semble que la forêt de la forêt peut parler. Avec les mots « Serendipity » - un résultat inattendu - il semble qu'un complot devait arriver juste pour la forêt du destin. On dit que la forêt a regardé des événements depuis des années, en attendant un en particulier se produire.
 
 Sur le site, les créateurs expliquent l'histoire de la forêt. On dit que, après les bombes atomiques sont tombées sur Hiroshima et Nagasaki, les gens avaient peur que la guerre serait une réalité pour toujours. Afin de prévenir la guerre nucléaire, la forêt aurait dit aux quatre dirigeants japonais que si elles existent encore, ils doivent soit remise ou être tués par la forêt. Au fil du temps, le Japon n'a pas respecté l'avertissement de la forêt, et finissent par se rendre, devenant ainsi la cinquième nation à succomber à la guerre atomique.
 
 L'appel de la forêt se poursuit l'histoire de nous dire que peu importe ce qui se passe, la forêt sera là pour voir et faire nos choix. Le film est une histoire très intéressante avec beaucoup de rebondissements. Avec son mélange de thriller et mystère, on se demande comment vous devez interpréter ce que la forêt vous dit.</div>
+
+<div class="trait">
 </div>
 
-<div class="trait"></div>
-
+<div class="tweet">
+<a class="twitter-timeline" data-lang="fr" data-width="400" data-height="800" data-theme="light" href="https://twitter.com/Lappeldelafort2?ref_src=twsrc%5Etfw">Tweets by Lappeldelafort2</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 <div class="etoile">
 <i class="stars fas fa-star"></i>
@@ -60,6 +66,8 @@ L'appel de la forêt se poursuit l'histoire de nous dire que peu importe ce qui 
 <i class="bordure far fa-star"></i>
 
 </div>
+
+
 <div class="commentaire">
   <label>Laissez votre commentaire: </label>
 <form action="" method="POST">

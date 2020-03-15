@@ -2,7 +2,8 @@
     <title>MeetUp - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <?php
+
+  <?php
     require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/manager/manager.php");
     require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Utilisateur.php");
     session_start();
@@ -28,7 +29,8 @@
     <link rel="stylesheet" href="/Site-de-reservation-de-cinema/src/css/icomoon.css">
     <link rel="stylesheet" href="/Site-de-reservation-de-cinema/src/css/style.css">
     <link rel="stylesheet" type="text/css" href="../src/css/mosaique.css" />
-	<script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="/Site-de-reservation-de-cinema/index.php">Ciné<span> Views.</span></a>
