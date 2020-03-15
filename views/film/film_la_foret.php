@@ -15,15 +15,6 @@
 <div class="film">
 
 <img class="img_la_foret" width="700" height="400"src="../../src/images/image_film/la_foret.jpg"></img>
-</div>
-
-
-
-
-<div class="bouton">
-    <button id="watch" href="../formulaire/formulaire_film.php" class="btn btn-primary">Ajouter à la watch_list</button>
-    <button href="../formulaire/formulaire_film.php" class="btn btn-primary ">Bande annonce </button>
-        <button href="../formulaire/formulaire_film.php" class="btn btn-primary partager_film">Partager ce film</button>
 
 </div>
 
@@ -31,14 +22,16 @@
   Film en vedette
 </div>
 
-  <img class="bord" width="175" height="220" src="../../src/images/image_film/bande_annonce_laforet.jpg"></img>
-    <img class="bord_2" width="175" height="220"  src="../../src/images/image_film/bande_annonce_sonic.jpg"></img>
-    <img class="bord_3" width="175" height="220" src="../../src/images/image_film/bande_annonce_harleyquinn.jpg"></img>
-      <img class="bord_4" width="175" height="220"  src="../../src/images/image_film/bande_annonce_theboy.jpg"></img>
+<a href="film_la_foret.php">  <img class="bord" width="175" height="220" src="../../src/images/image_film/bande_annonce_laforet.jpg"></img></a>
+  <a href="film_sonic.php">   <img class="bord_2" width="175" height="220"  src="../../src/images/image_film/bande_annonce_sonic.jpg"></img></a>
+  <a href="film_harley_quinn.php">   <img class="bord_3" width="175" height="220" src="../../src/images/image_film/bande_annonce_harleyquinn.jpg"></img></a>
+  <a href="film_the_boy.php">     <img class="bord_4" width="175" height="220"  src="../../src/images/image_film/bande_annonce_theboy.jpg"></img></a>
 
 
 <div class="bande_annonce" >
 <img class="laforet"src="../../src/images/image_film/bande_annonce_laforet.jpg"></img>
+
+
 </div>
 
 
@@ -49,7 +42,15 @@
 
 Sur le site, les créateurs expliquent l'histoire de la forêt. On dit que, après les bombes atomiques sont tombées sur Hiroshima et Nagasaki, les gens avaient peur que la guerre serait une réalité pour toujours. Afin de prévenir la guerre nucléaire, la forêt aurait dit aux quatre dirigeants japonais que si elles existent encore, ils doivent soit remise ou être tués par la forêt. Au fil du temps, le Japon n'a pas respecté l'avertissement de la forêt, et finissent par se rendre, devenant ainsi la cinquième nation à succomber à la guerre atomique.
 
-L'appel de la forêt se poursuit l'histoire de nous dire que peu importe ce qui se passe, la forêt sera là pour voir et faire nos choix. Le film est une histoire très intéressante avec beaucoup de rebondissements. Avec son mélange de thriller et mystère, on se demande comment vous devez interpréter ce que la forêt vous dit.</div>
+L'appel de la forêt se poursuit l'histoire de nous dire que peu importe ce qui se passe, la forêt sera là pour voir et faire nos choix. Le film est une histoire très intéressante avec beaucoup de rebondissements. Avec son mélange de thriller et mystère, on se demande comment vous devez interpréter ce que la forêt vous dit.
+<input type="button" href="../../views/watchlist.php"value="Ajouter ce film "></input>
+
+<input type="button" value="Bande annonce"></input>
+
+
+<input type="button" value="Partager ce film"></input>
+
+</div>
 
 <div class="trait">
 </div>
@@ -69,12 +70,16 @@ L'appel de la forêt se poursuit l'histoire de nous dire que peu importe ce qui 
 
 
 <div class="commentaire">
+
+
+
   <label>Laissez votre commentaire: </label>
 <form action="" method="POST">
 
 <textarea class="form" rows="5" column="10"></textarea>
 <input type="submit" value="Envoyer votre commentaire"></input>
 </form>
+
 
 </div>
 

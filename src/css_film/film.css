@@ -72,6 +72,12 @@ margin-top: -200px;
   margin-bottom:40px;
 
 }
+input[type="button"]{
+  margin-left:20px;
+  margin-top:5px;
+  width:200px;
+  background-color:#f9cf22;
+}
 
 .form{
   width:500px;
@@ -85,8 +91,6 @@ input[type="submit"]{
 label{
   color:#f9cf22;
 }
-
-
 .vedette{
   margin-top:-480px;
   margin-left:920px;
@@ -99,15 +103,11 @@ label{
   margin-left:920px;
   border-radius:5px;
 }
-
-
 .bord_2{
-
   margin-top:-250px;
   margin-left:1100px;
   border-radius:5px;
 }
-
 .td{
   border-radius:10px;
 }
