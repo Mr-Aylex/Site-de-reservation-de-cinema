@@ -8,5 +8,6 @@ require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Uti
 $manager = new manager();
 $user = $manager->connexion_utilisateur($_POST['mail'], $_POST['mdp']);
 $_SESSION['user'] = serialize($user);
-header('Location: ../index.php');
+var_dump($user);
+//header('Location: ../index.php');
 ?>

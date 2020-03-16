@@ -3,7 +3,7 @@
 include '../include/header.php';
 ?>
 <body>
-<form action="../traitement/connexion.php" method="post">
+<form action="/Site-de-reservation-de-cinema/traitement/connexion.php" method="post" style="padding-top: 150px"class="container">
     <div class="form-group">
         <label for="mail">Adresse Mail</label>
         <input type="text" name="mail" id="mail" class="form-control">

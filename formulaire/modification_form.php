@@ -3,7 +3,7 @@
 include '../include/header.php';
 ?>
 <body>
-<form action="../traitement/modification.php" method="post">
+<form action="../traitement/modification.php" method="post" style="padding-top: 150px"class="container">
     <div class="form-group">
         <label for="nom">Nom</label>
         <input type="text" name="nom" id="nom" class="form-control" value="<?php echo $user->getNom()?>">
