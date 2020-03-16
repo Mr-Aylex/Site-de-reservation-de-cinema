@@ -11,18 +11,13 @@ include "include/header.php";
 
 	  <section id="home-section" class="hero js-fullheight">
 	  	<h3 class="vr"><span>Bienvenue </span> à Cine Views.</h3>
-	  	<div id="timer" class="text-center">
-			  <div class="time" id="days"></div>
-			  <div class="time" id="hours"></div>
-			  <div class="time" id="minutes"></div>
-			  <div class="time" id="seconds"></div>
-			</div>
+
 		  <div class="home-slider owl-carousel js-fullheight">
 	      <div class="slider-item js-fullheight">
 	      	<div class="overlay"></div>
 	        <div class="container-fluid px-0">
 	          <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/carroussel.jpeg);">
+	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/fond-ecran.jpg);">
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -39,7 +34,7 @@ include "include/header.php";
 	      	<div class="overlay"></div>
 	        <div class="container-fluid px-0">
 	          <div class="row d-flex no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/carroussel_2.jpeg);">
+	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/fond-ecran-2.jpg);">
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -56,7 +51,7 @@ include "include/header.php";
           <div class="overlay"></div>
           <div class="container-fluid px-0">
             <div class="row d-flex no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
-              <div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/carroussel_3.jpeg);">
+              <div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/fond-ecran-3.jpg);">
                 <div class="overlay"></div>
               </div>
               <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -99,7 +94,7 @@ include "include/header.php";
 			<div class="container">
 				<div class="row justify-content-center pb-5">
           <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
-            <h2 class="mb-4">Reçois les nouveautés par mail : </h2>
+            <h2 class="mb-4">Recevez les nouveautés par mail : </h2>
             <p>Pour plus d'informations contactez-nous :</p>
             <div class="row d-flex justify-content-center mt-4">
               <div class="col-md-10">
@@ -116,7 +111,7 @@ include "include/header.php";
 			</div>
 		</section>
 
-		<section class="ftco-section bg-light" id="schedule-section">
+		<section class="ftco-section back" id="schedule-section">
 			<div class="container">
 				<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
@@ -269,7 +264,7 @@ include "include/header.php";
 
 
 
-    <section class="ftco-section bg-light" id="blog-section">
+    <section class="ftco-section back" id="blog-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
