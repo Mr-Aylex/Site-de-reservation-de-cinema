@@ -92,16 +92,15 @@ include "include/header.php";
 	  			</div>
     		</div>
     	</div>
-    </section
-    
+    </section>
 
 		<section class="ftco-section ftco-subscribe img" style="background-image: url(src/images/dunkerque.jpg);">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row justify-content-center pb-5">
           <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
-            <h2 class="mb-4">Join Our Event</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h2 class="mb-4">Reçois les nouveautés par mail : </h2>
+            <p>Pour plus d'informations contactez-nous :</p>
             <div class="row d-flex justify-content-center mt-4">
               <div class="col-md-10">
                 <form action="#" class="subscribe-form">
@@ -121,7 +120,7 @@ include "include/header.php";
 			<div class="container">
 				<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<span class="subheading">Schedule</span>
+          	<span class="subheading">Ciné Views.</span>
             <h2 class="mb-4">Program Schedule</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
           </div>
@@ -338,7 +337,7 @@ include "include/header.php";
 
 
 		<section class="ftco-section ftco-no-pt ftco-no-pb">
-			<div id="map" class="bg-white"></div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48360.244803697155!2d-74.02557376004921!3d40.75068975772552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598fb7535443%3A0x6c2bdda01b2a8881!2sAngelika%20Film%20Center%20%26%20Caf%C3%A9%20-%20New%20York!5e0!3m2!1sfr!2sfr!4v1584370484181!5m2!1sfr!2sfr" width="1500" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		</section>
     <?php
     include "include/footer.php";
