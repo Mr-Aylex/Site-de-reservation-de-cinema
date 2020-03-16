@@ -1,8 +1,4 @@
 <?php
-
-//require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/traitement/traitement_film.php");
-//require_once("../model/Films.php");
-
 /**
  * Class manager
  */
