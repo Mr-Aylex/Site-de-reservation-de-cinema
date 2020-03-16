@@ -3,6 +3,8 @@
 <?php
 include "include/header.php";
 ?>
+
+<link rel="stylesheet" type="text/css" href="src/css_index/index.css" />
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
@@ -73,26 +75,26 @@ include "include/header.php";
     	<div class="container-fluid px-0">
     		<div class="row no-gutters">
 	  			<div class="col-md-6 col-lg-3 ftco-animate">
-	  				<div class="gallery img" style="background-image: url(src/images/gallery-1.jpg);">
+	  				<div class="gallery img" style="background-image: url(src/images/film-1.jpg);">
 	  				</div>
 	  			</div>
 	  			<div class="col-md-6 col-lg-3 ftco-animate">
-	  				<div class="gallery img" style="background-image: url(src/images/gallery-2.jpg);">
+	  				<div class="gallery img" style="background-image: url(src/images/film-2.jpg);">
 	  				</div>
 	  			</div>
 	  			<div class="col-md-6 col-lg-3 ftco-animate">
-	  				<div class="gallery img" style="background-image: url(src/images/gallery-3.jpg);">
+	  				<div class="gallery img" style="background-image: url(src/images/film-3.jpg);">
 	  				</div>
 	  			</div>
 	  			<div class="col-md-6 col-lg-3 ftco-animate">
-	  				<div class="gallery img" style="background-image: url(src/images/gallery-4.jpg);">
+	  				<div class="gallery img" style="background-image: url(src/images/film-4.jpg);">
 	  				</div>
 	  			</div>
     		</div>
     	</div>
     </section>
 
-		<section class="ftco-section ftco-subscribe img" style="background-image: url(src/images/bg_1.jpg);">
+		<section class="ftco-section ftco-subscribe img" style="background-image: url(src/images/dunkerque.jpg);">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row justify-content-center pb-5">

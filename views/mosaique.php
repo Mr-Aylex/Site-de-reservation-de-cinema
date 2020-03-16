@@ -24,7 +24,7 @@
 
 <div class="division bas" style="width: 18rem;">
 
-  <a href="../views/film/film_la_foret.php"><img class="img" height="200" width="150"src="../src/images/image_film/the_boy.jpeg" class="" alt="..."/></a>
+  <a href="../views/film/film_the_boy.php"><img class="img" height="200" width="150"src="../src/images/image_film/the_boy.jpeg" class="" alt="..."/></a>
 
 <span class="icon" >Films</span>
   <div class="card-body">
@@ -41,7 +41,7 @@
 
 <div class="division bas" style="width: 18rem;">
 
-  <a href="../views/film/film_la_foret.php"><img class="img" height="200" width="150"src="../src/images/image_film/sonic.jpeg" class="" alt="..."/></a>
+  <a href="../views/film/film_sonic.php"><img class="img" height="200" width="150"src="../src/images/image_film/sonic.jpeg" class="" alt="..."/></a>
 
 <span class="icon" >Films</span>
   <div class="card-body">
@@ -56,7 +56,7 @@
 
 <div class="division bas" style="width: 18rem;">
 
-  <a href="../views/film/film_la_foret.php"><img class="img" height="200" width="150"src="../src/images/image_film/bad_boys.jpeg" class="" alt="..."/></a>
+  <a href="../views/film/film_bad_boys.php"><img class="img" height="200" width="150"src="../src/images/image_film/bad_boys.jpeg" class="" alt="..."/></a>
 
 <span class="icon" >Films</span>
   <div class="card-body">
@@ -73,7 +73,7 @@
 
 <div class="division bas" style="width: 18rem;">
 
-  <a href="../views/film/film_la_foret.php"><img class="img" height="200" width="150"src="../src/images/image_film/Harley_quinn.jpeg" class="" alt="..."/></a>
+  <a href="../views/film/film_harley_quinn.php"><img class="img" height="200" width="150"src="../src/images/image_film/Harley_quinn.jpeg" class="" alt="..."/></a>
 
 <span class="icon" >Films</span>
   <div class="card-body">
