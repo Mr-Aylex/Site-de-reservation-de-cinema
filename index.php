@@ -92,7 +92,8 @@ include "include/header.php";
 	  			</div>
     		</div>
     	</div>
-    </section>
+    </section
+    
 
 		<section class="ftco-section ftco-subscribe img" style="background-image: url(src/images/dunkerque.jpg);">
 			<div class="overlay"></div>
