@@ -9,5 +9,5 @@ $manager = new manager();
 $user = $manager->connexion_utilisateur($_POST['mail'], $_POST['mdp']);
 $_SESSION['user'] = serialize($user);
 var_dump($user);
-//header('Location: ../index.php');
+header('Location: ../index.php');
 ?>

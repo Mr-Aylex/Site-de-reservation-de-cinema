@@ -94,7 +94,7 @@ class manager
         }
         else
         {
-            header('Location: connexion_form.php');
+            header('Location: ../formulaire/connexion_form.php');
         }
     }
 
@@ -128,7 +128,7 @@ class manager
         $request->execute(array(
             'nom' => $user->getNom(),
             'prenom' => $user->getPrenom(),
-            'mail' => $user->getAdresse(),
+            'mail' => $user->getMail(),
             'adresse' => $user->getAdresse(),
             'id' => $user->getId()
         ));

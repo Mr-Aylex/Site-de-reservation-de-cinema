@@ -8,5 +8,6 @@ session_start();
 $user = unserialize($_SESSION['user']);
 $user->hydrate($_POST);
 $manager = new manager();
+$_SESSION['user'] = serialize($user);
 $manager->modifier_les_donnees_utilisateur($user);
 ?>
