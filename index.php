@@ -17,7 +17,7 @@ include "include/header.php";
 	      	<div class="overlay"></div>
 	        <div class="container-fluid px-0">
 	          <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/fond-ecran.jpg);">
+	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/fond.jpg);">
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -34,7 +34,7 @@ include "include/header.php";
 	      	<div class="overlay"></div>
 	        <div class="container-fluid px-0">
 	          <div class="row d-flex no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/fond-ecran-2.jpg);">
+	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/fond-2.jpg);">
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -51,7 +51,7 @@ include "include/header.php";
           <div class="overlay"></div>
           <div class="container-fluid px-0">
             <div class="row d-flex no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
-              <div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/fond-ecran-3.jpg);">
+              <div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/fond-3.jpg);">
                 <div class="overlay"></div>
               </div>
               <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">

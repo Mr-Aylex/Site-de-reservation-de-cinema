@@ -16,7 +16,7 @@
     }
     ?>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="../src/css/header.css" />
     <link rel="stylesheet" href="/Site-de-reservation-de-cinema/src/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="/Site-de-reservation-de-cinema/src/css/animate.css">
 
