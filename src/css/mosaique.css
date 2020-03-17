@@ -118,11 +118,13 @@ body{
   background: #f9cf22;
   color:#fff;
   font-size:1.2rem;
+  border-radius: 20px;
   padding: 1rem 2rem;
   text-decoration: none;
   margin-top:5px;
 }
 .btn:hover{
+  background-color:#fff;
   color:#f9cf22;
 
 }

@@ -6,12 +6,13 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/site-de-reservation-de-cinema/model/F
 $manager = new manager();
 $tab_film = $manager->flush_film();
 $film = $tab_film[$_GET['name']];
+
 ?>
 <link rel="stylesheet" type="text/css" href="../../src/css_film/film.css" />
 <script type="text/javascript" src="../../src/javascript/film.js"></script>
 <body class="body">
-    <div class="film">
-        <img class="img_la_foret" width="700" height="400" src="../../src/images/image_film/<?php echo $film->getImage(); ?>"></img>
+    <div style="margin-top:100px;margin-left:100px;">
+        <img class="img_la_foret" width="400" height="400" src="../../src/images/image_film/<?php echo $film->getImage(); ?>"></img>
 
     </div>
 
@@ -30,7 +31,7 @@ $film = $tab_film[$_GET['name']];
     <div class="bande_annonce">
         <img class="laforet" src="../../src/images/image_film/<?php echo $film->getBande_annonce(); ?>"></img>
     </div>
-    <h4 class="title">Bad boys 3:For l ife</h4>
+    <h4 class="title"><?php echo $film->getTitre(); ?></h4>
     <div class="resume">
         <?php echo $film->getResume(); ?>
         <input type="button" href="../../views/watchlist.php" value="Ajouter ce film "></input>
@@ -63,4 +64,3 @@ $film = $tab_film[$_GET['name']];
 include "../../include/footer.php";
 ?>
 </html>
-

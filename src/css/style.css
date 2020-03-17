@@ -8011,10 +8011,10 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #000000; }
+  color: #f9cf22; }
   a:hover, a:focus {
     text-decoration: none;
-    color: #000000;
+    color: #f9cf22;
     outline: none !important; }
 
 h1, h2, h3, h4, h5,
@@ -8024,7 +8024,7 @@ h1, h2, h3, h4, h5,
   font-weight: 400; }
 
 .text-primary {
-  color: #000000 !important; }
+  color: #f9cf22 !important; }
 
 .ftco-navbar-light {
   background: transparent !important;
@@ -8035,7 +8035,7 @@ h1, h2, h3, h4, h5,
   z-index: 3; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #000000 !important;
+      background: #f9cf22 !important;
       position: relative;
       top: 0;
       padding-top: 0;
@@ -8082,7 +8082,7 @@ h1, h2, h3, h4, h5,
         height: 2px;
         bottom: 0;
         left: 0;
-        background: #000000;
+        background: #f9cf22;
         visibility: visible;
         -webkit-transform: scaleX(0);
         -moz-transform: scaleX(0);
@@ -8114,7 +8114,7 @@ h1, h2, h3, h4, h5,
     padding-bottom: .7rem;
     padding-left: 18px;
     padding-right: 18px;
-    background: #000000;
+    background: #f9cf22;
     margin-top: 0;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -8124,8 +8124,8 @@ h1, h2, h3, h4, h5,
       display: inline-block;
       color: #fff; }
     .ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
-      background: #000000;
-      border: 1px solid #000000; }
+      background: #f9cf22;
+      border: 1px solid #f9cf22; }
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
     border: 1px solid #fbb901;
     background: #fbb901 !important; }
@@ -8170,10 +8170,10 @@ h1, h2, h3, h4, h5,
         padding-right: 0 !important;
         padding-bottom: 20px !important; } }
     .ftco-navbar-light.scrolled .nav-item.active > a {
-      color: #000000- !important; }
+      color: #fff- !important; }
     .ftco-navbar-light.scrolled .nav-item.cta > a {
       color: #fff !important;
-      background: #000000;
+      background: #fff;
       border: none !important;
       padding-top: 0.5rem !important;
       padding-bottom: .5rem !important;

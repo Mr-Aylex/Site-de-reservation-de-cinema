@@ -2,8 +2,7 @@
 <body>
 <?php
   include "../include/header.php";
-
-  require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/manager/manager.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/manager/manager.php");
 require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Films.php");
 
 
@@ -23,9 +22,9 @@ $tab_film = $manager->flush_film();
     </div>
     <div class="header-overlay"></div>
     <div class="header-content text-md-center">
-      <h1 class="color">Profitez du meilleur site de cinema !</h1>
-      <p>Avengers EndGame disponible sur nos plateforme </p>
-      <a class="btn">Regarder</a>
+      <h1 style="margin-left:100px;"class="color">Profitez du meilleur site de cinema !</h1>
+      <p style="margin-left:10px;" >Avengers EndGame disponible sur nos plateforme </p>
+      <a href="premium.php" style="border-radius:20px;"class="btn">Regarder <i class="far fa-play-circle"></i></a>
     </div>
   </header>
 
