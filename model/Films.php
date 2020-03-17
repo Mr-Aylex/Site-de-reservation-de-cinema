@@ -6,7 +6,7 @@ require_once("../manager/manager.php");
  * Class Films
  */
 class Films {
-
+  protected $id;
   protected $titre;
   protected $salle;
   protected $image;
@@ -82,6 +82,22 @@ class Films {
   public function setImage($image)
   {
     $this->image = $image;
+  }
+
+  /**
+   * @return int
+   */
+  public function getId()
+  {
+    return $this->id;
+  }
+
+  /**
+   * @param int $id
+   */
+  public function setId($id)
+  {
+    $this->id = $id;
   }
 }
 ?>
