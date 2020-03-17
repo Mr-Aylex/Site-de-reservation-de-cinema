@@ -7,13 +7,9 @@ $manager = new manager();
 $tab_film = $manager->flush_film();
 ?>
 <html>
-<body>
-
 
   <body>
-<?php
-  include "../include/header.php";
-  ?>
+
 
 
   <header class="v-header container">
@@ -64,9 +60,4 @@ include "../include/footer.php";
 ?>
 </body>
 
-
-<?php
-include "../include/footer.php";
-?>
-</body>
 </html>
