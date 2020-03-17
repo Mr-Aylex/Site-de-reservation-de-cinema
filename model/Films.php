@@ -9,6 +9,7 @@ class Films {
 
   protected $titre;
   protected $salle;
+  protected $image;
 
   /**
    * Films constructor.
@@ -65,6 +66,22 @@ class Films {
   {
     $this->titre = $titre;
     return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getImage()
+  {
+    return $this->image;
+  }
+
+  /**
+   * @param string $image
+   */
+  public function setImage($image)
+  {
+    $this->image = $image;
   }
 }
 ?>

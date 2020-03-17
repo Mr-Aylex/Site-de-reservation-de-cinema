@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Class manager
  */
@@ -134,6 +135,21 @@ class manager
         ));
 
             header('Location: ../index.php');
+    }
+    public function flush_film()
+    {
+        require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Films.php");
+        $request = $this->connexion_bd()->query('SELECT * FROM films');
+        $response = $request->fetchall();
+        $tab_film = array();
+        $i = 0;
+        foreach ($response as $item => $value) {
+            $nom = strtr($value['titre'],array(" " => "_", "'" => "-"));
+            $$nom = new Films($value);
+            $tab_film[$nom] = $$nom;
+            $i++;
+        }
+        return $tab_film;
     }
 
 }
