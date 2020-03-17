@@ -41,9 +41,6 @@
 <div class="resume">
 
   Le garçon: La Malédiction de Brahms est une adaptation de film de série du roman de Victor Hugo. Ceci est l'un des plus populaires des listes de lecture dans de nombreuses écoles publiques à travers les Etats-Unis. Dans cette série intéressante, vous apprendrez tout sur l'histoire de la musique classique, la littérature classique, et les techniques classiques du cinéma. Le film récapitule quatre jours très amusant dans la vie d'un héros improbable.
-
-
-
 L'apprentissage de la classique histoire de la musique: Films semblent avoir beaucoup plus de temps et de soins d'entrer dans ces adaptations, donc nous allons parler ici. Une caractéristique fantastique dans ce film est qu'il documente de nombreux grands et célèbres compositeurs qui étaient en vie au cours de la même période de temps que les personnages principaux.
 <input type="button" href="../../views/watchlist.php"value="Ajouter ce film "></input>
 

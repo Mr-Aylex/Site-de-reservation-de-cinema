@@ -1,16 +1,22 @@
 <html>
 <?php
-include "../include/header.php";
+include "../../include/header.php";
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site-de-reservation-de-cinema/manager/manager.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/site-de-reservation-de-cinema/model/Films.php");
 $manager = new manager();
 $tab_film = $manager->flush_film();
+$film = $tab_film[$_GET['name']];
 ?>
-<body>
+<link rel="stylesheet" type="text/css" href="../../src/css_film/film.css" />
+<script type="text/javascript" src="../../src/javascript/film.js"></script>
+<body class="body">
     <div class="film">
-        <img class="img_la_foret" width="700" height="400" src="../../src/images/image_film/badboys.jpg"></img>
+        <img class="img_la_foret" width="700" height="400" src="../../src/images/image_film/<?php echo $film->getImage(); ?>"></img>
+
     </div>
+
     <div class="vedette">
+        <a class="btn btn-danger" href="../../formulaire/reservation_film.php?id_film=<?php echo $film->getId(); ?>&id_utilisateur=<?php $user->getId(); ?>">Reserver</a>
         Film en vedette
     </div>
         <a href="film_la_foret.php"> <img class="bord" width="175" height="220"
@@ -22,20 +28,11 @@ $tab_film = $manager->flush_film();
         <a href="film_the_boy.php"> <img class="bord_4" width="175" height="220"
                                          src="../../src/images/image_film/bande_annonce_theboy.jpg"></img></a>
     <div class="bande_annonce">
-        <img class="laforet" src="../../src/images/image_film/bad_boys_3.jpg"></img>
+        <img class="laforet" src="../../src/images/image_film/<?php echo $film->getBande_annonce(); ?>"></img>
     </div>
     <h4 class="title">Bad boys 3:For l ife</h4>
     <div class="resume">
-        Si vous êtes un fan de Bad Boys pour la vie, alors vous apprécierez certainement ce film. Le film a beaucoup de
-        violence et de scénarios sexuels qu'elle fait appel à la fois les hommes et les femmes. Cette série raconte
-        l'histoire de deux hommes d'âge moyen qui ont eu une longue association avec la force de police.
-
-        Howard (James Caan) est un préretraité qui daté de jeunes filles pendant des années et quand il se retire enfin, il
-        décide de rencontrer une ancienne flamme. Cependant, il est peu de temps avant qu'il ne soit accusé d'avoir enlevé
-        son ex-petite amie et sa vendant comme esclave sexuelle. Cependant, il est peu de temps avant qu'il est appelé en
-        service quand l'homme qu'il avait été juré de protéger meurt dans des circonstances mystérieuses. Pendant ce temps,
-        Owen (Thomas Haden Church) se retrouve coincé dans une profonde forêt sombre à l'âge de 35 après toute sa famille
-        est tué dans un accident de la maison monstre.
+        <?php echo $film->getResume(); ?>
         <input type="button" href="../../views/watchlist.php" value="Ajouter ce film "></input>
         <input type="button" value="Bande annonce"></input>
         <input type="button" value="Partager ce film"></input>
@@ -63,7 +60,7 @@ $tab_film = $manager->flush_film();
     </div>
 </body>
 <?php
-include "../include/footer.php";
+include "../../include/footer.php";
 ?>
 </html>
 

@@ -40,9 +40,9 @@
 
 <div class="resume">Lorsque vous regardez l'appel, il semble que la forêt de la forêt peut parler. Avec les mots « Serendipity » - un résultat inattendu - il semble qu'un complot devait arriver juste pour la forêt du destin. On dit que la forêt a regardé des événements depuis des années, en attendant un en particulier se produire.
 
-Sur le site, les créateurs expliquent l'histoire de la forêt. On dit que, après les bombes atomiques sont tombées sur Hiroshima et Nagasaki, les gens avaient peur que la guerre serait une réalité pour toujours. Afin de prévenir la guerre nucléaire, la forêt aurait dit aux quatre dirigeants japonais que si elles existent encore, ils doivent soit remise ou être tués par la forêt. Au fil du temps, le Japon n'a pas respecté l'avertissement de la forêt, et finissent par se rendre, devenant ainsi la cinquième nation à succomber à la guerre atomique.
+    Sur le site, les créateurs expliquent l'histoire de la forêt. On dit que, après les bombes atomiques sont tombées sur Hiroshima et Nagasaki, les gens avaient peur que la guerre serait une réalité pour toujours. Afin de prévenir la guerre nucléaire, la forêt aurait dit aux quatre dirigeants japonais que si elles existent encore, ils doivent soit remise ou être tués par la forêt. Au fil du temps, le Japon n'a pas respecté l'avertissement de la forêt, et finissent par se rendre, devenant ainsi la cinquième nation à succomber à la guerre atomique.
 
-L'appel de la forêt se poursuit l'histoire de nous dire que peu importe ce qui se passe, la forêt sera là pour voir et faire nos choix. Le film est une histoire très intéressante avec beaucoup de rebondissements. Avec son mélange de thriller et mystère, on se demande comment vous devez interpréter ce que la forêt vous dit.
+    L'appel de la forêt se poursuit l'histoire de nous dire que peu importe ce qui se passe, la forêt sera là pour voir et faire nos choix. Le film est une histoire très intéressante avec beaucoup de rebondissements. Avec son mélange de thriller et mystère, on se demande comment vous devez interpréter ce que la forêt vous dit.
 <input type="button" href="../../views/watchlist.php"value="Ajouter ce film "></input>
 
 <input type="button" value="Bande annonce"></input>
