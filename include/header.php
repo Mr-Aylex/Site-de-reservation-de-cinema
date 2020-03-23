@@ -50,12 +50,12 @@
 	          <li class="nav-item"><a href="/Site-de-reservation-de-cinema/views/contact.php" class="nav-link"><span>Contact</span></a></li>
                 <?php
                 if(empty($_SESSION['user'])) {?>
-                    <li class="nav-item cta"><a href="/Site-de-reservation-de-cinema/formulaire/connexion_form.php" class="nav-link">Connexion</a></li>
-                    <li class="nav-item cta"><a href="/Site-de-reservation-de-cinema/formulaire/inscription_form.php" class="nav-link">Inscription</a></li>
+                    <li class="nav-item cta"><a href="/Site-de-reservation-de-cinema/formulaire/connexion_form.php" class="btn btn-outline-warning">Connexion</a></li>
+                    <li class="nav-item cta"><a href="/Site-de-reservation-de-cinema/formulaire/inscription_form.php" class="btn btn-outline-warning">Inscription</a></li>
                 <?php } else {?>
 
-                <li class="nav-item cta"><a href="/Site-de-reservation-de-cinema/formulaire/modification_form.php" class="nav-link">modification</a></li>
-                <li class="nav-item cta"><a href="/Site-de-reservation-de-cinema/traitement/deconnexion.php" class="nav-link">Déconnexion</a></li>
+                <li class="nav-item "><a href="/Site-de-reservation-de-cinema/formulaire/modification_form.php" class="btn btn-outline-warning">modification</a></li>
+                <li class="nav-item "><a href="/Site-de-reservation-de-cinema/traitement/deconnexion.php" class="btn btn-outline-warning">Déconnexion</a></li>
                 <?php } ?>
 	        </ul>
 	      </div>
