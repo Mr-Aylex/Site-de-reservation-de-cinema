@@ -10,7 +10,7 @@ $manager = new manager();
 $tab_film = $manager->flush_film();
   ?>
 
-<!--
+
 <header class="v-header container">
     <div class="fullscreen-video-wrap">
       <video  width="320" height="240" controls muted loop autoplay>
@@ -25,8 +25,8 @@ $tab_film = $manager->flush_film();
       <a href="premium.php" style="border-radius:20px;"class="btn">Regarder <i class="far fa-play-circle"></i></a>
     </div>
   </header>
--->
- <section class="section section-a">
+
+ <section style="margin-left:400px;"class="section section-a">
     <div class="container">
         <table style="">
             <tr>
@@ -44,7 +44,7 @@ $tab_film = $manager->flush_film();
             </tr>
         </table>
     </div>
-  </section> 
+  </section>
 
 
 

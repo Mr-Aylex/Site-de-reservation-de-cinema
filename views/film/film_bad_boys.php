@@ -56,8 +56,6 @@
     <input type="button" href="../../views/watchlist.php" value="Ajouter ce film "></input>
 
     <input type="button" value="Bande annonce"></input>
-
-
     <input type="button" value="Partager ce film"></input>
 
 </div>

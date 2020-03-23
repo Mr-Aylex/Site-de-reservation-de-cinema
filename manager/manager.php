@@ -12,7 +12,7 @@ class manager
     {
         try
         {
-            $bdd = new PDO('mysql:host=localhost;dbname=cinema_php;charset=utf8','root','');
+            $bdd = new PDO('mysql:host=localhost;dbname=cinema_php;charset=utf8','root','root');
         }
         catch(Exception $e)
         {
@@ -145,8 +145,6 @@ class manager
         require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Films.php");
         $request = $this->connexion_bd()->query('SELECT * FROM films');
         $response = $request->fetchall();
-
-
         $tab_film = array();
         foreach ($response as $item => $value) {
             $nom = strtr($value['titre'],array(" " => "_", "'" => "µ"));

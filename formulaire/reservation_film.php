@@ -2,11 +2,12 @@
 include '../include/header.php';
 ?>
 <html>
-<body>
+  <script src="../src/javascript/calcul.js" crossorigin="anonymous"></script>
+<body >
 <form action="" method="post" class="container" style="padding-top: 150px; padding-bottom: 50px">
     <div class="form-group">
         <label for="enfant" class="text-white">Nombre de place enfant</label>
-        <select name="nb_enfant" id="enfant" class="form-control">
+        <select  name="nb_enfant" id="enfant" class="form-control">
             <?php for ($i = 0; $i < 30; $i++) { ?>
                 <option value="<?php echo $i ?>"><?php echo $i ?></option>
             <?php } ?>
@@ -28,10 +29,20 @@ include '../include/header.php';
             <?php } ?>
         </select>
     </div>
+
+    <div class="form-group">
+        <label for="nb_adulte" class="text-white">Tarifs</label>
+        <input id="resultat" />
+    </div>
+
+ <div ></div>
+
+
     <div>
+      <input type="button" name="id_utilisateur" value="Voir tarif" onclick="calcul()">
         <input type="hidden" name="id_utilisateur" value="<?php $_GET['id_utilisateur']; ?>">
         <input type="hidden" name="id_film" value="<?php $_GET['id_film']; ?>">
-        <input type="submit" name="Valider" class="btn btn-success">
+        <input type="submit" name="Valider" class="btn btn-success" >
     </div>
 </form>
 </body>

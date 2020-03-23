@@ -13,7 +13,7 @@ class Films {
   protected $resume;
   protected $bande_annonce;
   protected $tweet;
-
+  protected $video;
   /**
    * Films constructor.
    * @param $donnees
@@ -77,6 +77,10 @@ class Films {
   public function getImage()
   {
     return $this->image;
+  }
+
+  public function getVideo($video){
+    return $this->video = $video;
   }
 
   /**
@@ -147,6 +151,10 @@ class Films {
   public function setResume($resume)
   {
     $this->resume = $resume;
+  }
+
+  public function setVideo($video){
+    $this->video = $video;
   }
 
 }
