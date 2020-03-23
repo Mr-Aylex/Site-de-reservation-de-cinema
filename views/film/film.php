@@ -6,23 +6,42 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/site-de-reservation-de-cinema/model/F
 $manager = new manager();
 $tab_film = $manager->flush_film();
 $film = $tab_film[$_GET['name']];
+if ($film->getImage() == "the_boy.jpeg"){
+  $path = "boy.mp4";
+}
+
+if ($film->getImage() == "Appel_de_la_foret.jpg"){
+  $path = "foret.mp4";
+}
+
+if ($film->getImage() == "sonic.jpeg"){
+  $path = "sonic.mp4";
+}
+
+if ($film->getImage() == "birds_of_prey.jpeg"){
+  $path = "quinn.mp4";
+}
+
+if ($film->getImage() == "bad_boys.jpeg"){
+  $path = "bad_boy.mp4";
+}
 ?>
 <link rel="stylesheet" type="text/css" href="../../src/css_film/film.css" />
 <script type="text/javascript" src="../../src/javascript/film.js"></script>
 <body class="body">
-    <div style="margin-top:100px;margin-left:100px;">
-        <img class="img_la_foret" width="400" height="400" src="../../src/images/image_film/<?php echo $film->getImage(); ?>"></img>
+
+  <div style="background-position: right -100px;background-image: url('../../src/images/image_film/<?php echo $film->getImage()?>');">
+    <div style="margin-top:100px;margin-left:350px;">
+      <video  width="720" height="640" controls muted loop autoplay>
+
+
+    <source  src="../../src/video/<?php echo $path ?>" ype="video/mp4"></source>
+
+    </video>
     </div>
-
-
-    <div>
-    <video  width="320" height="240" controls muted loop autoplay>
-<source  src="../../src/video/<?php$film->getVideo()); ?>" ype="video/mp4"></source>
-
-  </video>
 </div>
 
-    <div style="margin-top:500px;"class="bande_annonce">
+    <div style="margin-top:300px;"class="bande_annonce">
         <img class="laforet" width="300" height="300" src="../../src/images/image_film/<?php echo $film->getBande_annonce(); ?>"></img>
     </div>
     <h4 style="  margin-left:420px;"class="title"><?php echo $film->getTitre(); ?></h4>
