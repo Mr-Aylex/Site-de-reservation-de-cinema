@@ -3380,7 +3380,7 @@ input[type="button"].btn-block {
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
-    color: #000000;
+    color: #fff;
     pointer-events: none;
     cursor: default; }
 
@@ -8132,7 +8132,7 @@ h1, h2, h3, h4, h5,
   .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active {
     background: transparent;
     background: none;
-    color: #000000; }
+    color: #fff; }
     .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active span:before {
       visibility: visible;
       -webkit-transform: scaleX(1);
@@ -8140,7 +8140,7 @@ h1, h2, h3, h4, h5,
       transform: scaleX(1); }
   @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-      color: #000000
+      color: #fff
 ; } }
   .ftco-navbar-light .navbar-toggler {
     border: none;
@@ -8152,7 +8152,7 @@ h1, h2, h3, h4, h5,
     letter-spacing: .1em; }
     .ftco-navbar-light .navbar-toggler:hover, .ftco-navbar-light .navbar-toggler:focus {
       text-decoration: none;
-      color: #000000;
+      color: #fff;
       outline: none !important; }
   .ftco-navbar-light.scrolled {
     position: fixed;
@@ -8188,7 +8188,7 @@ h1, h2, h3, h4, h5,
         display: inline-block;
         color: #fff !important; }
     .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
-      border-color: #000000; }
+      border-color: #fff; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light.scrolled .navbar-nav {
         background: none;
@@ -8205,9 +8205,9 @@ h1, h2, h3, h4, h5,
       font-size: 16px;
       letter-spacing: .1em; }
     .ftco-navbar-light.scrolled .nav-link {
-      color: #000000 !important; }
+      color: #fff !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
-        color: #000000 !important; }
+        color: #fff !important; }
     .ftco-navbar-light.scrolled.awake {
       margin-top: 0px;
       -webkit-transition: .3s all ease-out;
@@ -8218,7 +8218,7 @@ h1, h2, h3, h4, h5,
       -o-transition: .3s all ease-out;
       transition: .3s all ease-out; }
     .ftco-navbar-light.scrolled .navbar-brand {
-      color: #000000;
+      color: #fff;
       padding-top: 1rem;
       padding-bottom: 1rem;
       font-size: 24px; }
@@ -8242,7 +8242,7 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     z-index: -1;
-    background: #000000;
+    background: #fff;
     opacity: 1; }
     @media (max-width: 1199.98px) {
       .hero:after {
@@ -8269,7 +8269,7 @@ h1, h2, h3, h4, h5,
     z-index: 1;
     color: rgba(0, 0, 0, 0.3); }
     .hero h3.vr span {
-      color: #000000; }
+      color: #fff; }
     @media (max-width: 1199.98px) {
       .hero h3.vr {
         display: none; } }
@@ -8380,7 +8380,7 @@ h1, h2, h3, h4, h5,
         bottom: 0;
         left: 0;
         right: 0;
-        background: #000000;
+        background: #fff;
         opacity: 0; }
       .owl-carousel.home-slider .slider-item .slider-text {
         height: 750px;
@@ -8405,7 +8405,7 @@ h1, h2, h3, h4, h5,
             bottom: 0;
             left: 0;
             right: 0;
-            background: #000000;
+            background: #fff;
             opacity: .4; }
           @media (max-width: 991.98px) {
             .owl-carousel.home-slider .slider-item .slider-text .one-third {
@@ -8527,7 +8527,7 @@ h1, h2, h3, h4, h5,
           .owl-carousel.home-slider .owl-nav .owl-prev {
             right: 61px !important; } }
         .owl-carousel.home-slider .owl-nav .owl-prev:hover, .owl-carousel.home-slider .owl-nav .owl-prev:focus {
-          background: #000000 !important;
+          background: #fff !important;
           outline: none !important; }
           .owl-carousel.home-slider .owl-nav .owl-prev:hover span:before, .owl-carousel.home-slider .owl-nav .owl-prev:focus span:before {
             font-size: 20px;
@@ -8540,7 +8540,7 @@ h1, h2, h3, h4, h5,
           .owl-carousel.home-slider .owl-nav .owl-next {
             right: 0 !important; } }
         .owl-carousel.home-slider .owl-nav .owl-next:hover, .owl-carousel.home-slider .owl-nav .owl-next:focus {
-          background: #000000 !important;
+          background: #fff !important;
           outline: none !important; }
           .owl-carousel.home-slider .owl-nav .owl-next:hover span:before, .owl-carousel.home-slider .owl-nav .owl-next:focus span:before {
             font-size: 24px;
@@ -8582,7 +8582,7 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     opacity: 0;
-    background: #000000; }
+    background: #fff; }
   .hero-wrap.hero-wrap-2 {
     height: 600px;
     position: relative;

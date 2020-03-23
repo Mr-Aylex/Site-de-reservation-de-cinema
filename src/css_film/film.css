@@ -16,12 +16,12 @@
   margin-left:150px;
 }
 .bande_annonce{
-  margin-top:400px;
   border-radius:5px ;
   margin-left:110px ;
 
 }
 .laforet{
+  margin-top:10px;
   border-radius:5px;
   height:300px;
 }
@@ -31,20 +31,15 @@ margin-left:320px;
   color:#fff;
 
 }
-.trait{
-  width:200px;
-margin-left:320px;
-margin-top:2px;
-border-bottom: 1px solid #0a2f5a;
-}
+
 
 .tweet{
-  margin-top: -610px;
+  margin-top: -600px;
   margin-left:900px;
 }
 
 .resume{
-  margin-left:320px;
+
   width:400px;
   margin-top:10px;
 }
@@ -63,12 +58,6 @@ margin-top: -200px;
   margin-bottom:40px;
 
 }
-input[type="button"]{
-  margin-left:20px;
-  margin-top:5px;
-  width:200px;
-  background-color:#000000;
-}
 
 .form{
   width:500px;
@@ -82,10 +71,7 @@ input[type="submit"]{
 label{
   color:#f9cf22;
 }
-.vedette{
-  margin-top:-480px;
-  margin-left:920px;
-}
+
 .bord{
   margin-left:920px;
   border-radius:5px;

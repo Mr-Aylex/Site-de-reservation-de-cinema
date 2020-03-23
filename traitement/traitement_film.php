@@ -7,5 +7,4 @@ require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Fil
 $film = new Films(["titre"=>"Bad boys","salle"=>'3']);
 $insert = new manager();
 $insert->insert_film($film);
-
  ?>

@@ -12,6 +12,7 @@ class Films {
   protected $image;
   protected $resume;
   protected $bande_annonce;
+  protected $tweet;
 
   /**
    * Films constructor.
@@ -85,6 +86,9 @@ class Films {
   {
     $this->image = $image;
   }
+  public function setTweet(){
+    return $this->tweet;
+  }
 
   /**
    * @return int
@@ -108,6 +112,10 @@ class Films {
   public function getBande_annonce()
   {
     return $this->bande_annonce;
+  }
+
+  public function getTweet(){
+    return $this->tweet;
   }
 
   /**

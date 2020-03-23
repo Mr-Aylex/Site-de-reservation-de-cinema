@@ -11,7 +11,7 @@ $tab_film = $manager->flush_film();
   ?>
 
 
-  <header class="v-header container">
+<header class="v-header container">
     <div class="fullscreen-video-wrap">
       <!--  https://www.videvo.net/video/typing-on-computer-white-bg/4475/ -->
       <!-- DO NOT USE THIS VIDEO, I JUST NEEDED A HOSTED VIDEO FOR THIS CODEPEN> USE THE ONE ABOVE -->
@@ -28,7 +28,7 @@ $tab_film = $manager->flush_film();
     </div>
   </header>
 
-  <section class="section section-a">
+ <section class="section section-a">
     <div class="container">
         <table style="">
             <tr>
@@ -46,7 +46,7 @@ $tab_film = $manager->flush_film();
             </tr>
         </table>
     </div>
-  </section>
+  </section> 
 
 
 

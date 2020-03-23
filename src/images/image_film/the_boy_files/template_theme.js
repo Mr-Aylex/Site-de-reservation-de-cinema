@@ -1,1 +1,0 @@
-window.__tplTheme={default:{primaryBackgroundColor:'#011523',secondBackgroundColor:'#bb1d2d',fontFamily:'Roboto, sans-serif',primaryColor:'#FFF',secondaryColor:'#FFF',border:'none'},comments:{primaryBackgroundColor:'#bb1d2d'},account:{primaryBackgroundColor:'#bb1d2d',secondBackgroundColor:'#011523'},lang_selector:{},rating:{},alternate_home_links:{},alternate_home_message:{}};
