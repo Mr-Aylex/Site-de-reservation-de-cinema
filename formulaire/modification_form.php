@@ -1,5 +1,6 @@
 <html>
 <?php
+require '../model/Films.php';
 include '../include/header.php';
 ?>
 <body style="background-image: url('../src/images/fonds_de_pages/fond_modification.jpg')">
