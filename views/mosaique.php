@@ -10,11 +10,9 @@ $manager = new manager();
 $tab_film = $manager->flush_film();
   ?>
 
-
+<!--
 <header class="v-header container">
     <div class="fullscreen-video-wrap">
-      <!--  https://www.videvo.net/video/typing-on-computer-white-bg/4475/ -->
-      <!-- DO NOT USE THIS VIDEO, I JUST NEEDED A HOSTED VIDEO FOR THIS CODEPEN> USE THE ONE ABOVE -->
       <video  width="320" height="240" controls muted loop autoplay>
 <source  src="../src/video/annonce.mp4" ype="video/mp4"></source>
 
@@ -27,7 +25,7 @@ $tab_film = $manager->flush_film();
       <a href="premium.php" style="border-radius:20px;"class="btn">Regarder <i class="far fa-play-circle"></i></a>
     </div>
   </header>
-
+-->
  <section class="section section-a">
     <div class="container">
         <table style="">

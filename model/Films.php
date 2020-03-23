@@ -86,8 +86,12 @@ class Films {
   {
     $this->image = $image;
   }
-  public function setTweet(){
-    return $this->tweet;
+
+  /**
+   * @param string $tweeter
+   */
+  public function setTweet($tweeter){
+    $this->tweet = $tweeter;
   }
 
   /**
@@ -107,13 +111,16 @@ class Films {
   }
 
   /**
-   * @return mixed
+   * @return string
    */
   public function getBande_annonce()
   {
     return $this->bande_annonce;
   }
 
+  /**
+   * @return string
+   */
   public function getTweet(){
     return $this->tweet;
   }

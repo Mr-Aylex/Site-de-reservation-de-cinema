@@ -12,7 +12,7 @@ class manager
     {
         try
         {
-            $bdd = new PDO('mysql:host=localhost;dbname=cinema_php;charset=utf8','root','root');
+            $bdd = new PDO('mysql:host=localhost;dbname=cinema_php;charset=utf8','root','');
         }
         catch(Exception $e)
         {
@@ -149,14 +149,12 @@ class manager
 
         $tab_film = array();
         foreach ($response as $item => $value) {
-            $nom = strtr($value['titre'],array(" " => "_", "'" => "-"));
+            $nom = strtr($value['titre'],array(" " => "_", "'" => "µ"));
             $$nom = new Films($value);
             $tab_film[$nom] = $$nom;
         }
-
-
-            var_dump($response["tweet"]);
         return $tab_film;
+
     }
 
 
