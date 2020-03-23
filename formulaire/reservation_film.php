@@ -3,7 +3,7 @@ include '../include/header.php';
 ?>
 <html>
 <body>
-<form action="" method="post" class="container" style="padding-top: 150px">
+<form action="" method="post" class="container" style="padding-top: 150px; padding-bottom: 50px">
     <div class="form-group">
         <label for="enfant">Nombre de place enfant</label>
         <select name="nb_enfant" id="enfant" class="form-control">

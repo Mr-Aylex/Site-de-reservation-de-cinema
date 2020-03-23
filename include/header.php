@@ -1,5 +1,5 @@
 <header>
-    <title>MeetUp - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Cinéma</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -54,8 +54,8 @@
                     <li class="nav-item cta"><a href="/Site-de-reservation-de-cinema/formulaire/inscription_form.php" class="btn btn-outline-warning">Inscription</a></li>
                 <?php } else {?>
 
-                <li class="nav-item "><a href="/Site-de-reservation-de-cinema/formulaire/modification_form.php" class="btn btn-outline-warning">modification</a></li>
-                <li class="nav-item "><a href="/Site-de-reservation-de-cinema/traitement/deconnexion.php" class="btn btn-outline-warning">Déconnexion</a></li>
+                <li class="nav-item"><a href="/Site-de-reservation-de-cinema/formulaire/modification_form.php" class="btn btn-outline-warning">modification</a></li>
+                <li class="nav-item"><a href="/Site-de-reservation-de-cinema/traitement/deconnexion.php" class="btn btn-outline-warning">Déconnexion</a></li>
                 <?php } ?>
 	        </ul>
 	      </div>

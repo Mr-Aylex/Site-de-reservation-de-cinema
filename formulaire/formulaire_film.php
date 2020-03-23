@@ -8,7 +8,7 @@
   </head>
   <body class="body">
   <?php include "../include/header.php" ?>
-  <form class="form" action="" method="post" style="padding-top: 150px"class="container">
+  <form class="form" action="" method="post" style="padding-top: 150px; padding-bottom: 50px"class="container">
 
 
       <h1 style="">Ajouter votre film : </h1>
