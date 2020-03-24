@@ -10,29 +10,34 @@ $film = $tab_film[$_GET['name']];
 
 if ($film->getImage() == "the_boy.jpeg"){
   $path = "boy.mp4";
+  $titre = "The boy";
 }
 
 if ($film->getImage() == "Appel_de_la_foret.jpg"){
   $path = "foret.mp4";
+  $titre = "L'appel de la forêt";
 }
 
 if ($film->getImage() == "sonic.jpeg"){
   $path = "sonic.mp4";
+  $titre = "The boy";
 }
 
 if ($film->getImage() == "birds_of_prey.jpeg"){
   $path = "quinn.mp4";
+  $titre = "Birds of Prey et la fantabuleuse histoire de Harley Quinn";
 }
 
 if ($film->getImage() == "bad_boys.jpeg"){
   $path = "bad_boy.mp4";
+  $titre = "Bad boys 3";
 }
 ?>
 <link rel="stylesheet" type="text/css" href="../../src/css_film/film.css" />
 <script type="text/javascript" src="../../src/javascript/film.js"></script>
 <body class="body">
 
-  <div style="background-position: right -100px;background-image: url('../../src/images/image_film/<?php echo $film->getImage()?>');">
+  <div style="background-position: right -100px;background-image: url('../../src/images/image_film/<?php echo $film->getBande_annonce();?>');">
     <div style="margin-top:100px;margin-left:350px;">
       <video  width="720" height="640" controls muted loop autoplay>
 
@@ -49,14 +54,14 @@ if ($film->getImage() == "bad_boys.jpeg"){
     <h4 style="  margin-left:420px;"class="title"><?php echo $film->getTitre(); ?></h4>
     <div style=" margin-left:420px;"class="resume">
         <?php echo $film->getResume(); ?>
-        <input style="color:white;"type="button" href="../../views/watchlist.php" value="Ajouter ce film "></input>
-        <input style="color:white;"type="button" value="Bande annonce"></input>
-        <input style="color:white;"type="button" value="Partager ce film"></input>
+        <a class="btn btn-danger"href="../../views/watchlist.php" >Ajouter ce film</a>
+        <a class="btn btn-danger" >Partager ce film</a>
+        <a class="btn btn-danger" href="../../formulaire/reservation_film.php?id_film=<?php echo $film->getId(); ?>&id_utilisateur=<?php $user->getId(); ?>">Reserver</a>
         </div>
-    <a style="margin-left:440px;margin-top:10px;" class="btn btn-danger" href="../../formulaire/reservation_film.php?id_film=<?php echo $film->getId(); ?>&id_utilisateur=<?php $user->getId(); ?>">Reserver</a>
+
     <div class="tweet">
         <a class="twitter-timeline" data-width="400" data-height="800"
-           href="<?php echo $film->getTweet();?>">Tweets by BadBoys</a>
+           href="<?php echo $film->getTweet();?>">Tweets by <?php echo $titre ?></a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
