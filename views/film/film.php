@@ -30,7 +30,7 @@ if ($film->getImage() == "birds_of_prey.jpeg"){
 
 if ($film->getImage() == "bad_boys.jpeg"){
   $path = "bad_boy.mp4";
-  $titre = "Bad boys 3"
+  $titre = "Bad boys 3";
 
 }
 ?>
