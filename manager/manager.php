@@ -169,8 +169,28 @@ class manager
 
 
 
-    public function reservation_film() {
-        return null;
+    public function reservation_film(Reservation $reservation) {
+          require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Reservation.php");
+          require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/traitement/traitement_reservation_film.php");
+      try
+      {
+          $bdd = new PDO('mysql:host=localhost;dbname=cinema_php;charset=utf8','root','');
+      }
+      catch(Exception $e)
+      {
+          die('ERREUR:'.$e->getMessage());
+      }
+      $req_2= $bdd->prepare('INSERT INTO place(tarif,type_de_tarif, salle,id_film,id_utilisateur) VALUES(?,?,?,?,?)');
+      $insert_reservation = $req_2->execute(array(
+          $reservation->getTarif(),
+          $reservation->getType_de_tarif(),
+          $reservation->getSalle(),
+          $reservation->getId_film(),
+          $reservation->getId_utilisateur()
+        ));
+          //header("Location:../index.php");
+          var_dump($insert_reservation);
+
     }
 
 }

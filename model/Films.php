@@ -79,9 +79,7 @@ class Films {
     return $this->image;
   }
 
-  public function getVideo($video){
-    return $this->video = $video;
-  }
+
 
   /**
    * @param string $image
@@ -153,9 +151,6 @@ class Films {
     $this->resume = $resume;
   }
 
-  public function setVideo($video){
-    $this->video = $video;
-  }
 
 }
 ?>

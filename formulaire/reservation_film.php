@@ -1,10 +1,12 @@
 <?php
 include '../include/header.php';
+
+
 ?>
 <html>
   <script src="../src/javascript/calcul.js" crossorigin="anonymous"></script>
 <body>
-<form action="" method="post" class="container" style="padding-top: 150px; padding-bottom: 50px">
+<form action="../traitement/traitement_reservation_film.php" method="post" class="container" style="padding-top: 150px; padding-bottom: 50px">
     <div class="form-group">
         <label for="enfant" class="text-white">Nombre de place enfant</label>
         <select  name="nb_enfant" id="enfant" class="form-control">
@@ -32,8 +34,8 @@ include '../include/header.php';
 
     <div class="form-group">
         <label for="nb_adulte" class="text-white">Tarifs</label>
-        <input id="resultat"  />
-            <input style="border-radius: 20px;color:white;background-color:#000000;" type="button"  onclick="calcul()"  name="id_utilisateur" value="Voir tarif" >
+        <input name="tarif" id="resultat"  />
+<input style="border-radius: 20px;color:white;background-color:#000000;" type="button"  onclick="calcul()"  name="id_utilisateur" value="Voir tarif" >
     </div>
 
 
