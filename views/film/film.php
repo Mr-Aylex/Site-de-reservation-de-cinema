@@ -10,26 +10,27 @@ $film = $tab_film[$_GET['name']];
 
 if ($film->getImage() == "the_boy.jpeg"){
   $path = "boy.mp4";
-
+  $titre = "The boy";
 }
 
 if ($film->getImage() == "Appel_de_la_foret.jpg"){
   $path = "foret.mp4";
-
+  $titre = "L'appel de la forêt";
 }
 
 if ($film->getImage() == "sonic.jpeg"){
   $path = "sonic.mp4";
-
+  $titre = "The boy";
 }
 
 if ($film->getImage() == "birds_of_prey.jpeg"){
   $path = "quinn.mp4";
-
+  $titre = "Birds of Prey et la fantabuleuse histoire de Harley Quinn";
 }
 
 if ($film->getImage() == "bad_boys.jpeg"){
   $path = "bad_boy.mp4";
+  $titre = "Bad boys 3"
 
 }
 ?>
@@ -56,12 +57,12 @@ if ($film->getImage() == "bad_boys.jpeg"){
         <?php echo $film->getResume(); ?>
         <a class="btn btn-danger"href="../../views/watchlist.php" >Ajouter ce film</a>
         <a class="btn btn-danger" >Partager ce film</a>
-      <a style="margin-left:440px;margin-top:10px;" class="btn btn-danger" href="../../formulaire/reservation_film.php?id_film=<?php echo $film->getId(); ?>&id_utilisateur=<?php $user->getId(); ?>">Reserver</a>
+      <a  class="btn btn-danger" href="../../formulaire/reservation_film.php?id_film=<?php echo $film->getId(); ?>&id_utilisateur=<?php $user->getId(); ?>">Reserver</a>
         </div>
 
     <div class="tweet">
         <a class="twitter-timeline" data-width="400" data-height="800"
-           href="<?php echo $film->getTweet();?>">Tweets by php</a>
+           href="<?php echo $film->getTweet();?>">Tweets by <?php echo $titre; ?></a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
