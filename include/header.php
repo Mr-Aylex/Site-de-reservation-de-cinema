@@ -46,6 +46,7 @@
 	          <li class="nav-item"><a href="/Site-de-reservation-de-cinema/index.php" class="nav-link"><span>Cinéma</span></a></li>
 	          <li class="nav-item"><a href="/Site-de-reservation-de-cinema/views/mosaique.php" class="nav-link"><span>Films</span></a></li>
 	          <li class="nav-item"><a href="#schedule-section" class="nav-link"><span>À venir</span></a></li>
+                <li class="nav-item"><a href="/Site-de-reservation-de-cinema/views/admin.php" class="nav-link">Admin</a></li>
 	          <!--<li class="nav-item"><a href="/Site-de-reservation-de-cinema/views/premium.php" class="nav-link"><span>Carte Premium</span></a></li>-->
 	          <li class="nav-item"><a href="/Site-de-reservation-de-cinema/views/contact.php" class="nav-link"><span>Contact</span></a></li>
                 <?php

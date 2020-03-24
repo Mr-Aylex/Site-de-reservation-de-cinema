@@ -38,7 +38,6 @@ class Utilisateur
                 $this->$method($value);
             }
         }
-        var_dump($this);
     }
     /**
      * @return string

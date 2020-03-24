@@ -23,6 +23,7 @@ class manager
 
     /**
      * @param Films $films
+     *
      */
     public function insert_film(Films $films)
     {
@@ -42,6 +43,7 @@ class manager
 
     /**
      * @param Utilisateur $user
+     * pour créer un utilisateur dans la BD
      */
     public function insert_Utilisateur(Utilisateur $user)
     {
@@ -82,9 +84,11 @@ class manager
      * @param $mail
      * @param $mdp
      * @return Utilisateur
+     * pour connecter l'utilisateur
      */
     public function connexion_utilisateur($mail, $mdp)
     {
+        /** @var PDO $this */
         $request = $this->connexion_bd()->prepare('SELECT * FROM utilisateur WHERE mail=:mail and mdp=:mdp');
         $request->execute(array('mdp'=>$mdp, 'mail'=>$mail));
         $response = $request->fetch();
@@ -103,28 +107,34 @@ class manager
      * @param int $id
      * @return Utilisateur
      */
-    public function recuperer_les_donnees_admin($id)
+    public function recuperer_les_donnees_admin()
     {
         /** @var PDO $this */
-        $request = $this->connexion_bd()->prepare('SELECT * FROM utilisateur WHERE id = :id');
-        $request->execute(array('id' => $id));
-        $response = $request->fetch();
+        $request = $this->connexion_bd()->query('SELECT * FROM utilisateur');
+        $response = $request->fetchall();
         if ($response == true)
         {
-            $user = new Utilisateur($response);
-            return $user;
+            $tab_user = array();
+            foreach ($response as $item => $value) {
+                $nom = $value['id'].$value['nom'];
+                $$nom = new Utilisateur($value);
+                $tab_user[$nom] = $$nom;
+            }
+            return $tab_user;
         }
         else
         {
-            header('Location: connexion_form.php');
+            return "base de données vide";
         }
     }
 
     /**
      * @param Utilisateur $user
+     * modifie l'utilisateur connecté
      */
     public function modifier_les_donnees_utilisateur(Utilisateur $user)
     {
+        /** @var PDO $this */
         $request = $this->connexion_bd()->prepare(' UPDATE utilisateur SET nom = :nom, prenom = :prenom, mail = :mail, adresse = :adresse WHERE id = :id');
         $request->execute(array(
             'nom' => $user->getNom(),
@@ -139,10 +149,12 @@ class manager
 
     /**
      * @return array
+     * methode qui récupère les films et leurs attribues
      */
     public function flush_film()
     {
         require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Films.php");
+        /** @var PDO $this */
         $request = $this->connexion_bd()->query('SELECT * FROM films');
         $response = $request->fetchall();
         $tab_film = array();
