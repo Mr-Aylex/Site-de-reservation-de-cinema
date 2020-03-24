@@ -37,7 +37,7 @@ if ($film->getImage() == "bad_boys.jpeg"){
 <script type="text/javascript" src="../../src/javascript/film.js"></script>
 <body class="body">
 
-  <div style="background-position: right -100px;background-image: url('../../src/images/image_film/<?php echo $film->getBande_annonce();?>');">
+  <div style="background-position: right -100px;background-image: url('../../src/images/image_film/<?php echo $film->getImage();?>');">
     <div style="margin-top:100px;margin-left:350px;">
       <video  width="720" height="640" controls muted loop autoplay>
 
