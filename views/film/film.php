@@ -6,6 +6,8 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/site-de-reservation-de-cinema/model/F
 $manager = new manager();
 $tab_film = $manager->flush_film();
 $film = $tab_film[$_GET['name']];
+
+
 if ($film->getImage() == "the_boy.jpeg"){
   $path = "boy.mp4";
 }
