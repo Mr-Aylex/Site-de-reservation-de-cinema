@@ -57,7 +57,7 @@ if ($film->getImage() == "bad_boys.jpeg"){
         <?php echo $film->getResume(); ?>
         <a class="btn btn-danger"href="../../views/watchlist.php" >Ajouter ce film</a>
         <a class="btn btn-danger" >Partager ce film</a>
-      <a  class="btn btn-danger" href="../../formulaire/reservation_film.php?id_film=<?php echo $film->getId(); ?>&id_utilisateur=<?php $user->getId(); ?>">Reserver</a>
+      <a  class="btn btn-danger" href="../../formulaire/reservation_film.php?id_film=<?php echo $film->getId();?>">Reserver</a>
         </div>
 
     <div class="tweet">
