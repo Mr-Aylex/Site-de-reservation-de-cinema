@@ -1,24 +1,44 @@
 
 
-
 function calcul(){
-  var enfant = document.getElementById('enfant');
-  var selectElmt = document.getElementById("enfant");
-  var valeurselectionnee = selectElmt.options[selectElmt.selectedIndex].value;
-  var nb_16= document.getElementById('nb_16');
-  var valeurselectionnee_2 = nb_16.options[selectElmt.selectedIndex].value;
+var selectElmt = document.getElementById("enfant");
+var valeurselectionnee = selectElmt.options[selectElmt.selectedIndex].value;
 
-for (var i = 0; i < nb_16.length; i++) {
-
-if(nb_16[i].selected){
-var tarif_16 = 8.50 * parseFloat(valeurselectionnee_2);
-}
-
-}
 for (var i = 0; i < selectElmt.length; i++) {
   if(selectElmt[i].selected){
-  var tarif_enfant = 5.90 * parseFloat(valeurselectionnee);
+    var prix_enfant = valeurselectionnee * 3;
+  }
+
+  console.log(prix_enfant,"enfant");
 }
+
+var selectElmt_2 = document.getElementById("nb_16");
+var valeurselectionnee_2 = selectElmt_2.options[selectElmt_2.selectedIndex].value;
+
+
+for (var i = 0; i < selectElmt_2.length; i++) {
+  if(selectElmt_2[i].selected){
+    var prix_16 = valeurselectionnee_2 * 8.50;
+  }
+
+  console.log(prix_16,"16 ans");
 }
-document.querySelector('input').value = tarif_16 + tarif_enfant+"€";
+
+var selectElmt_3 = document.getElementById("nb_adulte");
+var valeurselectionnee_3 = selectElmt_3.options[selectElmt_3.selectedIndex].value;
+
+
+for (var i = 0; i < selectElmt_2.length; i++) {
+  if(selectElmt_3[i].selected){
+    var prix_adulte = valeurselectionnee_3 * 10.50;
+  }
+
+  console.log(prix_adulte,"Adulte");
+}
+
+var total = prix_enfant+prix_16+prix_adulte;
+var input = document.querySelector('input');
+input.value = total+" €";
+
+
 }

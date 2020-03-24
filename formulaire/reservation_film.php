@@ -3,7 +3,7 @@ include '../include/header.php';
 ?>
 <html>
   <script src="../src/javascript/calcul.js" crossorigin="anonymous"></script>
-<body >
+<body>
 <form action="" method="post" class="container" style="padding-top: 150px; padding-bottom: 50px">
     <div class="form-group">
         <label for="enfant" class="text-white">Nombre de place enfant</label>
@@ -32,14 +32,14 @@ include '../include/header.php';
 
     <div class="form-group">
         <label for="nb_adulte" class="text-white">Tarifs</label>
-        <input id="resultat" />
+        <input id="resultat"  />
+            <input style="border-radius: 20px;color:white;background-color:#000000;" type="button"  onclick="calcul()"  name="id_utilisateur" value="Voir tarif" >
     </div>
 
- <div ></div>
 
 
     <div>
-      <input type="button" name="id_utilisateur" value="Voir tarif" onclick="calcul()">
+
         <input type="hidden" name="id_utilisateur" value="<?php $_GET['id_utilisateur']; ?>">
         <input type="hidden" name="id_film" value="<?php $_GET['id_film']; ?>">
         <input type="submit" name="Valider" class="btn btn-success" >
