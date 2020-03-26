@@ -1,12 +1,15 @@
 
 
 function calcul(){
-var selectElmt = document.getElementById("enfant");
-var valeurselectionnee = selectElmt.options[selectElmt.selectedIndex].value;
+
+  var type_tarif = "";
+  var selectElmt = document.getElementById("enfant");
+  var valeurselectionnee = selectElmt.options[selectElmt.selectedIndex].value;
 
 for (var i = 0; i < selectElmt.length; i++) {
   if(selectElmt[i].selected){
     var prix_enfant = valeurselectionnee * 3;
+    type_tarif = "enfant";
   }
 
   console.log(prix_enfant,"enfant");

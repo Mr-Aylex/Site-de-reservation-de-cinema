@@ -181,10 +181,13 @@ class manager
           "id_film" => $reservation->getId_film(),
           "id_user" => $reservation->getId_utilisateur()
       );
-      var_dump($tab);
         $insert_reservation = $req_2->execute($tab);
-          //header("Location:../index.php");
-          var_dump($insert_reservation);
+
+          if ($insert_reservation == true){
+            header("Location:../index.php");
+          }else{
+              header("Location:../formulaire/reservation_film.php");
+          }
 
     }
 

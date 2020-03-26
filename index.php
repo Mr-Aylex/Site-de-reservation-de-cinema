@@ -14,7 +14,6 @@ include "include/header.php";
 
 		  <div class="home-slider owl-carousel js-fullheight">
 	      <div class="slider-item js-fullheight">
-	      	<div class="overlay"></div>
 	        <div class="container-fluid px-0">
 	          <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
 	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(src/images/carroussel/fond.jpg);">
