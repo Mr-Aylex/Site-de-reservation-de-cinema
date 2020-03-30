@@ -20,7 +20,12 @@ include '../include/header.php';
         <label for="adresse" class="text-white">Adresse</label>
         <input type="text" name="adresse" id="adresse" class="form-control">
     </div>
-  
+
+    <div class="form-group">
+        <label for="admin" class="text-white">Mot de passe admin</label>
+        <input type="password" name="admin" id="admin" class="form-control">
+    </div>
+
     <input type="submit" name="Valider" class="btn btn-primary">
 </form>
 

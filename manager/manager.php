@@ -200,7 +200,7 @@ class manager
           'mail' => $user->getMail(),
           'adresse' => $user->getAdresse(),
           'mdp' => "Admin",
-          'admin' => "root"));
+          'admin' => $user->getAdmin()));
           header("Location:../views/admin.php");
 
     }
