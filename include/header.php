@@ -2,7 +2,8 @@
     <title>Cinéma</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<style>
+</style>
   <?php
   /**
    *@author
@@ -54,9 +55,13 @@
                     <li class="nav-item cta"><a href="/Site-de-reservation-de-cinema/formulaire/connexion_form.php" class="btn btn-outline-warning">Connexion</a></li>
                     <li class="nav-item cta"><a href="/Site-de-reservation-de-cinema/formulaire/inscription_form.php" class="btn btn-outline-warning">Inscription</a></li>
                 <?php } else {?>
+<div style="margin-top:10px;width:100px;">
+                <li class="nav-item"><a href="/Site-de-reservation-de-cinema/formulaire/modification_form.php" class="bout btn-outline-warning">modification</a></li>
+                </div>
 
-                <li class="nav-item"><a href="/Site-de-reservation-de-cinema/formulaire/modification_form.php" class="btn btn-outline-warning">modification</a></li>
-                <li class="nav-item"><a href="/Site-de-reservation-de-cinema/traitement/deconnexion.php" class="btn btn-outline-warning">Déconnexion</a></li>
+                <div style="margin-top:10px;width:100px;">
+                <li class="nav-item"><a href="/Site-de-reservation-de-cinema/traitement/deconnexion.php" style="margin-top:10px;" class="bout btn-outline-warning">Déconnexion</a></li>
+</div>
                 <?php } ?>
 	        </ul>
 	      </div>

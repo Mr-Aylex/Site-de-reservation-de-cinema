@@ -113,15 +113,10 @@ body{
   display:block;
   padding-bottom:2rem;
 }
-
-.btn{
-  background: #f9cf22;
-  color:#fff;
-  font-size:1.2rem;
-  border-radius: 20px;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  margin-top:5px;
+.bout{
+color:#f9cf22;
+border:1px solid #f9cf22;
+padding:1rem 2rem;
 }
 .btn:hover{
   background-color:#fff;
