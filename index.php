@@ -10,7 +10,7 @@ include "include/header.php";
 
 
 	  <section id="home-section" class="hero js-fullheight">
-	  	<h3 class="vr"><span>Bienvenue </span> à Cine Views.</h3>
+	  	<h3 class="vr"><span style="color:#000000;">Bienvenue </span> à Cine Views.</h3>
 
 		  <div class="home-slider owl-carousel js-fullheight">
 	      <div class="slider-item js-fullheight">
