@@ -173,7 +173,6 @@ class manager
           require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Reservation.php");
           require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/traitement/traitement_reservation_film.php");
       $req_2= $this->connexion_bd()->prepare('INSERT INTO place(tarif,type_de_tarif, salle,id_film,id_utilisateur) VALUES(:tarif, :type_tarif, :salle, :id_film, :id_user)');
-      var_dump($reservation);
       $tab = array(
           "tarif" =>$reservation->getTarif(),
           "type_tarif" => $reservation->getType_de_tarif(),
@@ -190,5 +189,21 @@ class manager
           }
 
     }
+
+
+    public function ajout_admin(Utilisateur $user){
+          $db = $this->connexion_bd();
+      $request = $db->prepare('INSERT INTO utilisateur(nom, prenom, mail, adresse, mdp, admin) VALUES(:nom, :prenom, :mail, :adresse, :mdp, :admin)');
+      $insert_utilisateur = $request->execute(array(
+          'nom' => $user->getNom(),
+          'prenom' => $user->getPrenom(),
+          'mail' => $user->getMail(),
+          'adresse' => $user->getAdresse(),
+          'mdp' => "Admin",
+          'admin' => "root"));
+          header("Location:../views/admin.php");
+
+    }
+
 
 }

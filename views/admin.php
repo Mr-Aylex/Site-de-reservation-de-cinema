@@ -31,7 +31,7 @@ $tab_user = $manager->recuperer_les_donnees_admin();
     </table>
 </section>
 <section class="container">
-    <a href="" class="btn-success ">Ajouter un administrateur</a>
+    <a href="../formulaire/ajout_admin_form.php" class="btn-success ">Ajouter un administrateur</a>
     <a href="" class="btn-danger ">Ajouter un film</a>
 </section>
 
