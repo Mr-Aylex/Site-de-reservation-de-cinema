@@ -168,31 +168,38 @@ class manager
     }
 
 
-
-    public function reservation_film(Reservation $reservation) {
+//Méthode qui ajoute une réservation
+    public function reservation_film(Reservation $reservation,$id) {
           require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Reservation.php");
           require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/traitement/traitement_reservation_film.php");
-      $req_2= $this->connexion_bd()->prepare('INSERT INTO place(tarif,type_de_tarif, salle,id_film,id_utilisateur) VALUES(:tarif, :type_tarif, :salle, :id_film, :id_user)');
+      $req_2= $this->connexion_bd()->prepare('INSERT INTO place(tarif,type_de_tarif, salle,id_film,id_utilisateur) VALUES(:tarif, :type_tarif, :salle, :id_film, :id_utilisateur)');
       $tab = array(
           "tarif" =>$reservation->getTarif(),
           "type_tarif" => $reservation->getType_de_tarif(),
           "salle" => $reservation->getSalle(),
           "id_film" => $reservation->getId_film(),
-          "id_user" => $reservation->getId_utilisateur()
+          "id_utilisateur" => $reservation->getId_utilisateur()
       );
         $insert_reservation = $req_2->execute($tab);
-
+//Vérification de l'existence du tableau de données
           if ($insert_reservation == true){
-            header("Location:../index.php");
+            $db = $this->connexion_bd();
+            $request = $db->query('SELECT * from place WHERE id_utilisateur=\''.$id.'\'');
+            $tableau = $request->fetch();
+            $unique = array_unique($tableau);
+              if($unique == true){
+                include "../views/recapitulatif_reservation.php";
+                return $unique;
+            }
+
           }else{
               header("Location:../formulaire/reservation_film.php");
           }
 
     }
 
-
     public function ajout_admin(Utilisateur $user){
-          $db = $this->connexion_bd();
+      $db = $this->connexion_bd();
       $request = $db->prepare('INSERT INTO utilisateur(nom, prenom, mail, adresse, mdp, admin) VALUES(:nom, :prenom, :mail, :adresse, :mdp, :admin)');
       $insert_utilisateur = $request->execute(array(
           'nom' => $user->getNom(),
@@ -204,6 +211,11 @@ class manager
           header("Location:../views/admin.php");
 
     }
+
+
+
+
+
 
 
 }

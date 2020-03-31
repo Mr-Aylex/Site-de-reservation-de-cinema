@@ -39,9 +39,7 @@ include '../include/header.php';
     </div>
 
 
-
     <div>
-        <?php var_dump($_GET); ?>
         <input type="hidden" name="id_utilisateur" value="<?php echo $user->getId() ?>">
         <input type="hidden" name="id_film" value="<?php echo $_GET['id_film']; ?>">
         <input type="submit" name="Valider" class="btn btn-success" >
