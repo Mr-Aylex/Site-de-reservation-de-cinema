@@ -10,9 +10,11 @@ include "../include/header.php";
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
           </div>
         </div>
+          <h3 class="text-white">Ou somme nous ?</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2618.0673737417474!2d2.5211154156790534!3d48.9902752793006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e61598425d2633%3A0xf2abfd07ec391e59!2zUGF0aMOpIEHDqXJvdmlsbGU!5e0!3m2!1sfr!2sfr!4v1585638574516!5m2!1sfr!2sfr"
+                  width="950" height="800" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="container"></iframe>
+        <div class="row block-9" style="padding-top: 50px">
 
-        <div class="row block-9">
-          <div class="col-md-7 order-md-last d-flex">
             <form action="#" class="bg-light p-4 p-md-5 contact-form">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Your Name">
@@ -31,7 +33,7 @@ include "../include/header.php";
               </div>
             </form>
 
-          </div>
+
 
           <div class="col-md-5 d-flex">
           	<div class="row d-flex contact-info mb-5">
