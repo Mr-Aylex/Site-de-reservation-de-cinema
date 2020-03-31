@@ -216,7 +216,7 @@ include "include/header.php";
 	              </div>
 	              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
 	              	<div class="speaker-wrap ftco-animate d-flex">
-	              		<div class="img speaker-img" style="background-image: url(src/images/bridge.jpg);"></div>
+	              		<div class="img speaker-img" style="background-image: url('src/images/bridge.jpg')"></div>
 	              		<div class="text pl-md-5">
 	              			<span class="time">08:00AM - 10:00AM</span>
 	              			<h2><a href="#">21 Bridge</a></h2>
