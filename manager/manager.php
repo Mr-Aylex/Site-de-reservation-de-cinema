@@ -6,8 +6,9 @@
 class manager
 {
     /**
-* @return PDO
-*/
+    * @return PDO
+     * methode qui return l'objet PDO
+    */
     public function connexion_bd()
     {
         try
@@ -23,7 +24,7 @@ class manager
 
     /**
      * @param Films $films
-     *
+     *Cette methode permet d'inserer un film
      */
     public function insert_film(Films $films)
     {
@@ -104,8 +105,8 @@ class manager
     }
 
     /**
-     * @param int $id
      * @return Utilisateur
+     * retourne tous les utilisateur présent dans la base de données
      */
     public function recuperer_les_donnees_admin()
     {

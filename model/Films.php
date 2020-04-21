@@ -16,7 +16,7 @@ class Films {
   protected $video;
   /**
    * Films constructor.
-   * @param $donnees
+   * @param array $donnees
    */
   public function __construct($donnees){
     $this->hydrate($donnees);
@@ -24,6 +24,7 @@ class Films {
 
   /**
    * @param array $donnees
+   * methode hydrate de la class Films
    */
   public function hydrate($donnees){
     foreach($donnees as $key => $value){
@@ -80,20 +81,23 @@ class Films {
   }
 
 
-
   /**
    * @param string $image
+   * @return Films
    */
   public function setImage($image)
   {
     $this->image = $image;
+    return $this;
   }
 
   /**
    * @param string $tweeter
+   * @return Films
    */
   public function setTweet($tweeter){
     $this->tweet = $tweeter;
+    return $this;
   }
 
   /**
@@ -106,10 +110,12 @@ class Films {
 
   /**
    * @param int $id
+   * @return Films
    */
   public function setId($id)
   {
     $this->id = $id;
+    return $this;
   }
 
   /**
@@ -128,11 +134,13 @@ class Films {
   }
 
   /**
-   * @param mixed $bande_annonce
+   * @param string $bande_annonce
+   * @return Films
    */
   public function setBande_annonce($bande_annonce)
   {
     $this->bande_annonce = $bande_annonce;
+    return $this;
   }
 
   /**
@@ -145,10 +153,12 @@ class Films {
 
   /**
    * @param string $resume
+   * @return Films
    */
   public function setResume($resume)
   {
     $this->resume = $resume;
+    return $this;
   }
 
 

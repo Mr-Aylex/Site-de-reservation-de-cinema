@@ -29,6 +29,7 @@ class Utilisateur
 
     /**
      * @param array $donnees
+     * Method hydrate de la class Utilisateur
      */
     public function hydrate($donnees)
     {
