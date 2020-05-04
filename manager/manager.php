@@ -196,6 +196,9 @@ class manager
 
     }
 
+    /**
+     * @param Utilisateur $user
+     */
     public function ajout_admin(Utilisateur $user){
       $db = $this->connexion_bd();
       $request = $db->prepare('INSERT INTO utilisateur(nom, prenom, mail, adresse, mdp, admin) VALUES(:nom, :prenom, :mail, :adresse, :mdp, :admin)');
@@ -210,7 +213,18 @@ class manager
 
     }
 
-
+    /**
+     * @param int $id_film
+     * @param String $commentaire
+     */
+    public function ajout_commentaire($id_film, $commentaire){
+        $db = $this->connexion_bd();
+        $request = $db->prepare('INSERT INTO commentaire(id_film, commentaire) VALUES(:id_film, :commentaire)');
+        $insert_utilisateur = $request->execute(array(
+            'id_film' => $id_film,
+            'commentaire' => $commentaire
+        ));
+    }
 
 
 

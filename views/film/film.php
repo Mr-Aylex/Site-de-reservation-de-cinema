@@ -6,6 +6,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/site-de-reservation-de-cinema/model/F
 $manager = new manager();
 $tab_film = $manager->flush_film();
 $film = $tab_film[$_GET['name']];
+var_dump($_GET);
 
 
 if ($film->getImage() == "the_boy.jpeg"){
@@ -73,9 +74,11 @@ if ($film->getImage() == "bad_boys.jpeg"){
     </div>
     <div class="commentaire">
         <label>Laissez votre commentaire: </label>
-        <form action="" method="POST">
-            <textarea class="form" rows="5" column="10"></textarea>
-            <input type="submit" value="Envoyer votre commentaire"></input>
+        <form action="../../traitement/ajout_commentaire.php" method="post">
+            <textarea class="form" rows="5" column="10" name="comm"></textarea>
+            <input type="hidden" name="name"value="<?php echo $_GET['name']?>">
+            <input type="hidden" name="id_film" value="<?php echo $film->getId(); ?>">
+            <input type="submit" name="" value="Envoyer votre commentaire"></input>
         </form>
     </div>
 </body>
