@@ -22,7 +22,6 @@ $tab_film = $manager->flush_film();
     <div class="header-content text-md-center">
       <h1 style="margin-left:100px;"class="color">Profitez du meilleur site de cinema !</h1>
       <p style="margin-left:10px;" >Avengers EndGame disponible sur nos plateforme </p>
-      <a href="premium.php" style="color:#f9cf22;border:1px solid #f9cf22;padding:1rem 2rem;">Regarder <i class="far fa-play-circle"></i></a>
     </div>
   </header>
 

@@ -15,21 +15,21 @@ include "../include/header.php";
                   width="950" height="800" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="container"></iframe>
         <div class="row block-9" style="padding-top: 50px">
 
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+            <form method="post" action="../traitement/message.php" class="bg-light p-4 p-md-5 contact-form">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+                <input type="text" name="nom" class="form-control" placeholder="Nom">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+                <input type="text" name="prenom" class="form-control" placeholder="Prénom">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                <input type="text" name="mail" class="form-control" placeholder="Email">
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                <input type="submit" name="submit" value="Envoyer Message" class="btn btn-primary py-3 px-5">
               </div>
             </form>
 

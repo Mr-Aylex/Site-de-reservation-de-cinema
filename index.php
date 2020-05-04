@@ -22,7 +22,7 @@ include "include/header.php";
 		          <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text mt-4 mt-md-0">
 			            <h2 class="mb-4">Réservez dès maintenant </h2>
-			            <p></li><a href="views/mosaique.php" class="btn btn-primary py-3 px-4">Acheter un ticket</a> <a href="#" class="btn btn-white py-3 px-4">Bande annonce</a></p>
+			            <p></li><a href="views/mosaique.php" class="btn btn-primary py-3 px-4">Acheter un ticket</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -39,7 +39,7 @@ include "include/header.php";
 		          <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text mt-4 mt-md-0">
                   <h2 class="mb-4">Réservez dès maintenant </h2>
-                <p><a href="#" class="btn btn-primary py-3 px-4">Acheter un ticket</a> <a href="#" class="btn btn-white py-3 px-4">Bande annonce</a></p>
+                <p><a href="views/mosaique.php" class="btn btn-primary py-3 px-4">Acheter un ticket</a></p>
               </div>
 		          </div>
 	        	</div>
@@ -56,7 +56,7 @@ include "include/header.php";
               <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                 <div class="text mt-4 mt-md-0">
                     <h2 class="mb-4">Réservez dès maintenant </h2>
-                  <p><a href="#" class="btn btn-primary py-3 px-4">Acheter un ticket</a> <a href="#" class="btn btn-white py-3 px-4">Bande annonce</a></p>
+                  <p><a href="views/mosaique.php" class="btn btn-primary py-3 px-4">Acheter un ticket</a></p>
                 </div>
               </div>
             </div>
@@ -93,16 +93,8 @@ include "include/header.php";
 			<div class="container">
 				<div class="row justify-content-center pb-5">
           <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
-            <h2 class="mb-4">Recevez les nouveautés par mail : </h2>
-            <p>Pour plus d'informations contactez-nous :</p>
             <div class="row d-flex justify-content-center mt-4">
               <div class="col-md-10">
-                <form action="#" class="subscribe-form">
-                  <div class="form-group d-flex">
-                    <input type="text" class="form-control" placeholder="Enter email address">
-                    <input type="submit" value="Subscribe" class="submit px-3">
-                  </div>
-                </form>
               </div>
             </div>
           </div>
@@ -134,7 +126,7 @@ include "include/header.php";
 				<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
           	<span class="subheading">Ciné Views.</span>
-            <p>Classement dèes meilleur film du moment :</p>
+            <p>Classement des meilleurs films du moment :</p>
           </div>
         </div>
 				<div class="ftco-schedule">

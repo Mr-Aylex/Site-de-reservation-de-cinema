@@ -55,8 +55,6 @@ if ($film->getImage() == "bad_boys.jpeg"){
     <h4 style="  margin-left:420px;"class="title"><?php echo $film->getTitre(); ?></h4>
     <div style=" margin-left:420px;"class="resume">
         <?php echo $film->getResume(); ?>
-        <a class="btn btn-danger"href="../../views/watchlist.php" >Ajouter ce film</a>
-        <a class="btn btn-danger" >Partager ce film</a>
       <a  class="btn btn-danger" href="../../formulaire/reservation_film.php?id_film=<?php echo $film->getId();?>">Reserver</a>
         </div>
 
@@ -66,7 +64,7 @@ if ($film->getImage() == "bad_boys.jpeg"){
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
-    <div class="etoile">
+    <div style="margin-top:-190px;margin-left:420px;">
         <i class="stars fas fa-star"></i>
         <i class="stars fas fa-star"></i>
         <i class="bordure far fa-star"></i>

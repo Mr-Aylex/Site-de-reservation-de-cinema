@@ -1,21 +1,29 @@
 <?php
 /**
- *Inscription utilisateur
+ *Message utilisateur
  */
 require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/manager/manager.php");
-require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Utilisateur.php");
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-$ut = new Utilisateur($_POST);
 $manager = new manager();
 
 
-if(isset($_POST["valider"])){
+if(isset($_POST["submit"])){
 
-  $manager->insert_Utilisateur($ut);
-  $mailto = $ut->getMail();
+  $mailto = $_POST["mail"];
+  // Load Composer's autoloader
+  require '../vendor/autoload.php';
+  // Instantiation and passing `true` enables exceptions
+$mail = new PHPMailer(true);
+$request = $manager->connexion_bd()->prepare('INSERT INTO message(nom,prenom,mail,message) VALUES(:nom,:prenom,:mail,:message)');
+    $tab = $request->execute(array(
+            "nom" =>$_POST["nom"],
+            "prenom" =>$_POST["prenom"],
+            "mail" =>$_POST["mail"],
+            "message" =>$_POST["message"]
+    ));
   // Load Composer's autoloader
   require '../vendor/autoload.php';
   // Instantiation and passing `true` enables exceptions
@@ -35,8 +43,8 @@ if(isset($_POST["valider"])){
       $mail->addAddress($mailto);     // Add a recipient
     if(isset($mail)){
       $mail->isHTML(true);                                  // Set email format to HTML
-      $mail->Subject = 'Inscription Cine Views ';
-      $mail->Body    = "<p>Merci pour votre inscription</p>";
+      $mail->Subject = 'Message Cine Views ';
+      $mail->Body    = "<p>Merci pour votre Message !</p>";
       $mail->AltBody = 'This is the body in plain text for non-HTML mail client';
       $mail->send();
       //on redririge
@@ -50,6 +58,7 @@ if(isset($_POST["valider"])){
 
 
 }
+
 
 
 
