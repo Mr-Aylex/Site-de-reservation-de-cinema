@@ -121,6 +121,24 @@ class Reservation {
     return $this;
   }
 
+  /**
+   * @return int
+   */
+  public function getNumero()
+  {
+    return $this->numero;
+  }
+
+  /**
+   * @param int $numero
+   * @return Utilisateur
+   */
+  public function setNumero($numero)
+  {
+    $this->numero = $numero;
+    return $this;
+  }
+
 
 }
 

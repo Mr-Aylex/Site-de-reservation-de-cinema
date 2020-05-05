@@ -1,5 +1,5 @@
 <?php
-
+require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Reservation.php");
 /**
  * Class manager
  */
@@ -224,6 +224,22 @@ class manager
             'id_film' => $id_film,
             'commentaire' => $commentaire
         ));
+    }
+
+    /**
+     * @return array
+     */
+    public function Getplaces() {
+        $db = $this->connexion_bd();
+        $request = $db->query('SELECT * from place');
+        $tableau = $request->fetchAll();
+        $tab_places = array();
+        foreach ($tableau as $item => $value) {
+            $numero = $value['numero'].'place';
+            $$numero = new Reservation($value);
+            $tab_places[$numero] = $$numero;
+        }
+        return $tab_places;
     }
 
 
