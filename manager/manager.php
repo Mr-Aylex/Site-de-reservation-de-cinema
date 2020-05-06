@@ -40,8 +40,8 @@ class manager
       ));
     if($insert_film == true)
     {
-      echo "film inseré";
-        //header("Location: ../index.php");
+
+        header("Location: ../index.php");
     }
 
 
