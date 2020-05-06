@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../src/css/mosaique.css" />
 
   <script src="https://kit.fontawesome.com/e1924a5c8f.js" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <nav style="width:1000px;" class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="/Site-de-reservation-de-cinema/index.php">Ciné<span> Views.</span></a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,13 +55,11 @@
                     <li class="nav-item cta"><a href="/Site-de-reservation-de-cinema/formulaire/connexion_form.php" class="btn btn-outline-warning">Connexion</a></li>
                     <li class="nav-item cta"><a href="/Site-de-reservation-de-cinema/formulaire/inscription_form.php" class="btn btn-outline-warning">Inscription</a></li>
                 <?php } else {?>
-<div style="margin-top:10px;width:100px;">
-                <li class="nav-item"><a href="/Site-de-reservation-de-cinema/formulaire/modification_form.php" class="bout btn-outline-warning">modification</a></li>
-                </div>
+                <li class="nav-item"><a href="/Site-de-reservation-de-cinema/formulaire/modification_form.php" class="nav-link">Modification</a></li>
 
-                <div style="margin-top:10px;width:100px;">
-                <li class="nav-item"><a href="/Site-de-reservation-de-cinema/traitement/deconnexion.php" style="margin-top:10px;" class="bout btn-outline-warning">Déconnexion</a></li>
-</div>
+
+                <li class="nav-item"><a href="/Site-de-reservation-de-cinema/traitement/deconnexion.php" class="nav-link">Déconnexion</a></li>
+
                 <?php } ?>
 	        </ul>
 	      </div>
