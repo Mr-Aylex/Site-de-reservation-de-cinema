@@ -242,8 +242,45 @@ class manager
         return $tab_places;
     }
 
+    /**
+     * @param int $id
+     */
+    public function Deleteplace($id) {
+        $db = $this->connexion_bd();
+        $request = $db->prepare('DELETE from place WHERE numero = :id');
+        $Delete_utilisateur = $request->execute(array(
+            'id' => $id
+        ));
+    }
 
-
+    /**
+     * @param int $tarif
+     * @param String $type_tarif
+     * @param int $salle
+     * @param int $id_film
+     * @param int $id
+     */
+    public function ModifierPlace($tarif, $type_tarif, $salle, $id_film, $id) {
+        $db = $this->connexion_bd();
+        $request = $db->prepare('UPDATE place set tarif = :tarif, type_de_tarif = :type_tarif, salle = :salle, id_film = :id_film WHERE numero = :id');
+        $Modifier_utilisateur = $request->execute(array(
+            'id' => $id,
+            'tarif' => $tarif,
+            'type_tarif' => $type_tarif,
+            'salle' => $salle,
+            'id_film' => $id_film
+        ));
+    }
+    public function GetReservation($id) {
+        $db = $this->connexion_bd();
+        $request = $db->prepare('SELECT * from place where numero = :id');
+        $get_res = $request->execute(array(
+            'id' => $id
+        ));
+        $res = $request->fetch();
+        var_dump($res);
+        return $res;
+    }
 
 
 }
