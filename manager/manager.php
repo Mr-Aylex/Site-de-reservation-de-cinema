@@ -29,18 +29,28 @@ class manager
     public function insert_film(Films $films)
     {
 
-    $request = $this->connexion_bd()->prepare('INSERT INTO films(nom,salle) VALUES(:nom, :salle)');
+    $request = $this->connexion_bd()->prepare('INSERT INTO films(titre,resume,image,bande_annonce,salle,tweet) VALUES(:titre, :resume,:image,:bande_annonce,:salle,:tweet)');
     $insert_film =$request->execute(array(
-        'nom'=>$films->getTitre(),
-        'salle'=>$films->getSalle()
-        ));
+        'titre'=>$films->getTitre(),
+        'resume'=>$films->getResume(),
+        'image'=>$films->getImage(),
+        'bande_annonce'=>$films->getBande_annonce(),
+        'salle'=>$films->getSalle(),
+        'tweet'=>$films->getTweet()
+      ));
     if($insert_film == true)
     {
+      echo "film inseré";
         //header("Location: ../index.php");
     }
 
 
     }
+
+
+
+
+
 
     /**
      * @param Utilisateur $user

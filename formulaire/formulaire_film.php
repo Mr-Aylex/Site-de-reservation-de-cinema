@@ -8,39 +8,49 @@
   </head>
   <body class="body">
   <?php include "../include/header.php" ?>
-  <form class="form" action="" method="post" style="padding-top: 150px; padding-bottom: 50px"class="container">
+  <form class="form" action="../traitement/ajout_film.php" method="post" class="container">
 
 
-      <h1 style="">Ajouter votre film : </h1>
-      <label class="label" style="color:white;" for="">Entrez votre nom :</label>
+      <h1 style="">Ajoutez votre film : </h1>
+      <label class="label" style="color:white;" for="">Entrez le titre de votre film : </label>
       <div>
-          <input class="" type="text" name="nom" placeholder="Nom"/>
+          <input class="" style="color:white;" type="text" name="titre" placeholder="Titre film..."/>
       </div>
 
       <div>
-          <label style="color:white;">Prenom :</label>
-          <input type="text" name="prenom" placeholder="Prenom"/>
+          <label style="color:white;">Enrez le numéro de la salle :</label>
+          <input type="number" name="salle"/>
       </div>
 
       <div>
-          <label class="label" style="color:white;" for="">Mail :</label>
-          <input type="text" name="mail" placeholder="Mail" value=""/>
+          <label class="label" style="color:white;" for="">Ajouter l'image du film :</label>
+    <input  type="file" id="image_film" name="image"
+       accept="image/png, image/jpeg,image/jpg">
       </div>
 
       <div>
-          <label class="label" style="color:white;" for="">Adresse :</label>
-          <input type="text" name="adresse" placeholder="Adresse">
+
+        <label class="label" style="color:white;" for="">Ajoutez le résumé du film :</label>
+
+        <input style="color:white;" type="text" name="resume" placeholder="Résumé du film..."/>
+      </div>
+
+            <div>
+                <label class="label" style="color:white;" for="">Ajouter la bande annonce du film :</label>
+                <input  type="file" id="bande_annonce_film" name="bande_annonce"
+                       accept="video/mp4">
+            </div>
+
+
+
+      <div>
+          <label style="color:white;">Enrez le lien twitter :</label>
+          <input style="color:white;" type="text" name="tweet" placeholder="Lien Twitter..."/>
       </div>
 
 
-      <label class="label" style="color:white;" for="">Numéro de téléphone :</label>
 
-      <input type="text" name="numero" placeholder="Numéro"/>
-
-      <label class="label" style="color:white;" for="">Mot de passe :</label>
-      <input type="password" name="mot_de_passe" placeholder="Mot de passe"/>
-
-      <input type="submit" value="Ajouter"/>
+      <input style="color:#fff;background-color:#f9cf22;" type="submit" value="Ajouter"/>
 
   </form>
 
