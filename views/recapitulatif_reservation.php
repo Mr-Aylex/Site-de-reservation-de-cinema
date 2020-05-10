@@ -1,7 +1,7 @@
 <html>
 <?php
 include "../include/header.php";
-
+$unique = unserialize($_SESSION['reservation'])
 ?>
 <body style="background-image: url('../src/images/fonds_de_pages/fond_modification.jpg'); background-size: cover">
 <section class="container">

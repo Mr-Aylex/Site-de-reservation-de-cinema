@@ -191,17 +191,9 @@ class manager
         $insert_reservation = $req_2->execute($tab);
 //Vérification de l'existence du tableau de données
           if ($insert_reservation == true){
-            $db = $this->connexion_bd();
-            $request = $db->query('SELECT * from place WHERE id_utilisateur=\''.$id.'\'');
-            $tableau = $request->fetch();
-            $unique = array_unique($tableau);
-              if($unique == true){
-                include "../views/recapitulatif_reservation.php";
-                return $unique;
-            }
-
+            return true;
           }else{
-              header("Location:../formulaire/reservation_film.php");
+              return false;
           }
 
     }
@@ -281,11 +273,12 @@ class manager
             'id_film' => $id_film
         ));
     }
-    public function GetReservation($id) {
+    public function GetReservation($id, $condition) {
         $db = $this->connexion_bd();
-        $request = $db->prepare('SELECT * from place where numero = :id');
+        $request = $db->prepare('SELECT * from place where /*:condition*/id_utilisateur = :id');
         $get_res = $request->execute(array(
-            'id' => $id
+            'id' => $id/*,
+            'condition' =>$condition*/
         ));
         $res = $request->fetch();
         var_dump($res);
