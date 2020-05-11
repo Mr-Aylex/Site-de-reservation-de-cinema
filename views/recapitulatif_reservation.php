@@ -1,32 +1,28 @@
 <html>
 <?php
 include "../include/header.php";
-$unique = unserialize($_SESSION['reservation'])
+$tab_places = $_SESSION['dernieres_places'];
 ?>
 <body style="background-image: url('../src/images/fonds_de_pages/fond_modification.jpg'); background-size: cover">
 <section class="container">
     <table class="table table-striped">
         <thead>
         <tr>
-            <th class="text-white">Numéro</th>
             <th class="text-white">Tarif</th>
-            <th class="text-white">Type_de_tarif</th>
-            <th class="text-white">Id utilisateur</th>
+            <th class="text-white">Type de tarif</th>
             <th class="text-white">Salle</th>
         </tr>
         </thead>
         <tbody>
-
+        <?php foreach ($tab_places as $key => $value) { ?>
         <tr>
-            <th class="text-white"><?php echo $unique["numero"] ?></th>
-            <th class="text-white"><?php echo $unique["tarif"] ?></th>
-            <th class="text-white"><?php echo $unique["type_de_tarif"]?></th>
-            <th class="text-white"><?php echo $unique["id_utilisateur"] ?></th>
-            <th class="text-white"><?php echo $unique["salle"] ?></th>
+            <th class="text-white"><?php echo $value->getTarif(); ?>€</th>
+            <th class="text-white"><?php echo $value->getType_de_tarif(); ?></th>
+            <th class="text-white"><?php echo $value->getSalle(); ?></th>
 
         </tr>
 
-
+        <?php } ?>
         </tbody>
     </table>
 </section>

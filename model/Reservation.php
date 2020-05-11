@@ -32,7 +32,7 @@ class Reservation {
   }
 
   /**
-   * @return string
+   * @return int
    */
   public function getTarif()
   {
@@ -40,8 +40,8 @@ class Reservation {
   }
 
   /**
-   * @param string $salle
-   * @return reservation
+   * @param int $tarif
+   * @return Utilisateur
    */
   public function setTarif($tarif)
   {
@@ -68,7 +68,7 @@ class Reservation {
   }
 
   /**
-   * @return int
+   * @return string
    */
   public function getSalle()
   {
@@ -76,7 +76,7 @@ class Reservation {
   }
 
   /**
-   * @param int $salle
+   * @param string $salle
    * @return reservation
    */
   public function setSalle($salle)

@@ -28,22 +28,20 @@ class manager
      */
     public function insert_film(Films $films)
     {
+        $request = $this->connexion_bd()->prepare('INSERT INTO films(titre,resume,image,bande_annonce,salle,tweet) VALUES(:titre, :resume,:image,:bande_annonce,:salle,:tweet)');
+        $insert_film =$request->execute(array(
+            'titre'=>$films->getTitre(),
+            'resume'=>$films->getResume(),
+            'image'=>$films->getImage(),
+            'bande_annonce'=>$films->getBande_annonce(),
+            'salle'=>$films->getSalle(),
+            'tweet'=>$films->getTweet()
+          ));
+        if($insert_film == true)
+        {
 
-    $request = $this->connexion_bd()->prepare('INSERT INTO films(titre,resume,image,bande_annonce,salle,tweet) VALUES(:titre, :resume,:image,:bande_annonce,:salle,:tweet)');
-    $insert_film =$request->execute(array(
-        'titre'=>$films->getTitre(),
-        'resume'=>$films->getResume(),
-        'image'=>$films->getImage(),
-        'bande_annonce'=>$films->getBande_annonce(),
-        'salle'=>$films->getSalle(),
-        'tweet'=>$films->getTweet()
-      ));
-    if($insert_film == true)
-    {
-
-        header("Location: ../index.php");
-    }
-
+            header("Location: ../index.php");
+        }
 
     }
 
@@ -89,8 +87,8 @@ class manager
     }
 
     /**
-     * @param $mail
-     * @param $mdp
+     * @param String $mail
+     * @param String $mdp
      * @return Utilisateur
      * pour connecter l'utilisateur
      */
@@ -176,7 +174,13 @@ class manager
     }
 
 
-//Méthode qui ajoute une réservation
+
+    /**
+     * @param Reservation $reservation
+     * @param int $id
+     * @return boolean
+     * Méthode qui ajoute une réservation
+     */
     public function reservation_film(Reservation $reservation,$id) {
           require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/model/Reservation.php");
           require_once($_SERVER['DOCUMENT_ROOT']."/site-de-reservation-de-cinema/traitement/traitement_reservation_film.php");
@@ -189,7 +193,7 @@ class manager
           "id_utilisateur" => $reservation->getId_utilisateur()
       );
         $insert_reservation = $req_2->execute($tab);
-//Vérification de l'existence du tableau de données
+        //Vérification de l'existence du tableau de données
           if ($insert_reservation == true){
             return true;
           }else{
@@ -273,17 +277,33 @@ class manager
             'id_film' => $id_film
         ));
     }
+
+    /**
+     * @param int $id
+     * @param String $condition
+     * @return boolean
+     *
+     */
     public function GetReservation($id, $condition) {
         $db = $this->connexion_bd();
-        $request = $db->prepare('SELECT * from place where /*:condition*/id_utilisateur = :id');
-        $get_res = $request->execute(array(
+        $request = $db->prepare('SELECT numero,tarif,type_de_tarif,place.salle, films.titre, utilisateur.nom
+from place INNER JOIN utilisateur ON utilisateur.id = place.id_utilisateur INNER JOIN films ON films.id = place.id_film where id_utilisateur = :id');
+        $request->execute(array(
             'id' => $id/*,
             'condition' =>$condition*/
+        ));
+        $res = $request->fetchAll();
+        return $res;
+    }
+    public function getFilm($id_film) {
+        $db = $this->connexion_bd();
+        $request = $db->prepare('SELECT * FROM films where id= :id');
+        $request->execute(array(
+            'id' =>$id_film
         ));
         $res = $request->fetch();
         var_dump($res);
         return $res;
     }
-
 
 }
