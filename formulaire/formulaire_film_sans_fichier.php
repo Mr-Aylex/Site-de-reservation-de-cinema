@@ -8,7 +8,7 @@
 </head>
 <body class="body">
 <?php include "../include/header.php" ?>
-<form class="form" action="../traitement/ajout_film.php" method="post" class="container" enctype="multipart/form-data">
+<form class="form" action="../traitement/ajout_film.php" method="post" class="container">
     <h1 style="">Ajoutez votre film : </h1>
     <label class="label" style="color:white;" for="">Entrez le titre de votre film : </label>
     <div>
@@ -20,8 +20,7 @@
     </div>
     <div>
         <label class="label" style="color:white;" for="">Ajouter l'image du film :</label>
-        <input type="file" id="image_film" name="image"
-               accept=".jpg,.png">
+        <input type="text" id="image_film" style="color:white;" name="image" placeholder="nom du fichier avec extension">
     </div>
     <div>
         <label class="label" style="color:white;" for="">Ajoutez le résumé du film :</label>
@@ -30,8 +29,7 @@
     </div>
     <div>
         <label class="label" style="color:white;" for="">Ajouter la bande annonce du film :</label>
-        <input type="file" id="bande_annonce_film" name="fileToUpload"
-               accept=".mp4">
+        <input type="text" id="bande_annonce_film" style="color:white;" name="bande_annonce" placeholder="nom du fichier avec extension">
     </div>
     <div>
         <label style="color:white;">Enrez le lien twitter :</label>

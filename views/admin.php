@@ -33,7 +33,7 @@ $tab_place = $manager->Getplaces();
 </section>
 <section class="container">
     <a href="../formulaire/ajout_admin_form.php" class="btn-success btn">Ajouter un administrateur</a>
-    <a href="../formulaire/formulaire_film.php" class="btn-secondary btn">Ajouter un film</a>
+    <a href="../formulaire/formulaire_film_sans_fichier.php" class="btn-secondary btn">Ajouter un film</a>
 </section>
 <section class="container">
     <table class="table table-striped">
